@@ -7,5 +7,8 @@
     <color name="blue">#0000FF</color>
     <color name="orange">#FFFF7700</color>
     <color name="yellow">#FFFF00</color>
-    <color name="purple">#FF00FF</color>
+    <color name="purple">#cc00ff</color>
+    <color name="pink">#FF00cc</color>
+    <color name="brown">#FF995500</color>
+    <color name="grey">#777777</color>
 </resources>
