@@ -10,20 +10,25 @@
     tools:context=".MainActivity"
     tools:visibility="visible"
     android:background="@drawable/query_logo"
-    >
-    <!-- android:foreground="@drawable/query_logo"-->
+    >   <!-- -->
 
+    <!-- android:foreground="@drawable/query_logo"-->
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4000dp"
+        android:src="@drawable/query_logo" />-->
     <TextView
-        android:layout_width="282dp"
-        android:layout_height="170dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:fontFamily="cursive"
         android:forceHasOverlappingRendering="false"
         android:foregroundGravity=""
-        android:text="Query Theory"
+        android:text="@string/query_theory"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="70sp"
-        android:typeface="normal"
+        android:textSize="80sp"
+        android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
