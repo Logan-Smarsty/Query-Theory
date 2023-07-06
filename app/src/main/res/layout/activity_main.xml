@@ -11,7 +11,6 @@
     tools:visibility="visible"
     android:background="@drawable/query_logo"
     >   <!-- -->
-
     <!-- android:foreground="@drawable/query_logo"-->
     <!--<ImageView
         android:layout_width="match_parent"
@@ -35,7 +34,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.041" />
-
-
-
 </RelativeLayout>
