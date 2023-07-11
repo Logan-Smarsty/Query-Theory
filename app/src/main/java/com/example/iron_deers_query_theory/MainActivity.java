@@ -40,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
         GoogleBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {signIn();}
+            public void onClick(View v) {
+                signIn();
+            }
         });
 
 
@@ -74,12 +76,6 @@ public class MainActivity extends AppCompatActivity {
 
     void signIn()
     {
-
         Intent signInIntent = gsc.getSignInIntent();
-
-        Intent intent = new Intent(MainActivity.this, Categories.class);
-        startActivity(intent);
         startActivityForResult(signInIntent, 1000);
-
-
     }};
