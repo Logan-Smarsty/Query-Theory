@@ -62,15 +62,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/signin"
-        android:layout_margin="10dp"
-        android:textStyle="bold"
+        android:layout_marginStart="10dp"
 
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="20dp"
         android:hint="Username"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
-        android:drawableLeft="@drawable/baseline_person_24"
-        android:drawablePadding="20dp"
-        tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields" />
+        android:textStyle="bold"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
 
 
     <EditText
@@ -90,7 +93,7 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textStyle="bold"
-        tools:ignore="Autofill,HardcodedText,RtlHardcoded,TouchTargetSizeCheck" />
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
