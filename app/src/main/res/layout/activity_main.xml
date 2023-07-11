@@ -9,8 +9,8 @@
     android:visibility="visible"
     tools:context=".MainActivity"
     tools:visibility="visible"
-    android:background="@drawable/query_logo">
-    <!-- -->
+    android:background="@drawable/query_logo"
+    >   <!-- -->
     <!-- android:foreground="@drawable/query_logo"-->
     <!--<ImageView
         android:layout_width="match_parent"
@@ -44,6 +44,9 @@
         android:visibility="invisible"
         tools:ignore="VisualLintButtonSize" />
 
+
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,43 +56,39 @@
         android:textColor="@color/black"
         android:textSize="35dp"
         android:textStyle="bold"
-        android:id="@+id/signin"
-        tools:ignore="HardcodedText,SpUsage" />
+        android:id="@+id/signin" />
 
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/signin"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:drawableLeft="@drawable/baseline_person_24"
-        android:drawablePadding="20dp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+
         android:hint="Username"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
-        android:textStyle="bold"
-        tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="20dp"
+        />
+
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/username"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:drawableLeft="@drawable/baseline_lock_24"
-        android:drawablePadding="20dp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+
         android:hint="Password"
-        android:inputType="textPassword"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
-        android:textStyle="bold"
-        tools:ignore="Autofill,HardcodedText,RtlHardcoded,TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="20dp"
+        android:inputType="textPassword"
+        />
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
@@ -102,7 +101,7 @@
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
-        tools:ignore="HardcodedText" />
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -115,7 +114,7 @@
         android:layout_centerHorizontal="true"
         android:backgroundTint="@color/material_dynamic_neutral_variant80"
         android:layout_margin="20dp"
-        tools:ignore="HardcodedText" />
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -125,7 +124,10 @@
         android:textStyle="bold"
         android:text="Or sign in with:"
         android:layout_centerHorizontal="true"
-        tools:ignore="HardcodedText" />
+
+
+
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -139,7 +141,19 @@
             android:layout_height="48dp"
             android:src="@drawable/google"
             android:id="@+id/GoogleBTN"
-            tools:ignore="ContentDescription" />
+            />
+
+
     </LinearLayout>
+
+
+
+
+
+
+
+
+
+
 
 </RelativeLayout>
