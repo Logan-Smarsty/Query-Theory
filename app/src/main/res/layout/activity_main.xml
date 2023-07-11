@@ -36,6 +36,7 @@
         app:layout_constraintVertical_bias="0.041"
         tools:ignore="TextContrastCheck" />
 
+
     <Button
         android:id="@+id/homeScreen"
         android:layout_width="match_parent"
@@ -43,9 +44,6 @@
         android:text="@string/button"
         android:visibility="invisible"
         tools:ignore="VisualLintButtonSize" />
-
-
-
 
     <TextView
         android:layout_width="match_parent"
@@ -56,22 +54,26 @@
         android:textColor="@color/black"
         android:textSize="35dp"
         android:textStyle="bold"
-        android:id="@+id/signin" />
+        android:id="@+id/signin"
+        tools:ignore="HardcodedText,SpUsage" />
 
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/signin"
-        android:layout_margin="10dp"
-        android:textStyle="bold"
+        android:layout_marginStart="10dp"
 
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="20dp"
         android:hint="Username"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
-        android:drawableLeft="@drawable/baseline_person_24"
-        android:drawablePadding="20dp"
-        />
+        android:textStyle="bold"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
 
 
     <EditText
@@ -79,16 +81,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/username"
-        android:layout_margin="10dp"
-        android:textStyle="bold"
+        android:layout_marginStart="10dp"
 
-        android:hint="Password"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:drawableLeft="@drawable/baseline_lock_24"
         android:drawablePadding="20dp"
+        android:hint="Password"
         android:inputType="textPassword"
-        />
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
@@ -101,7 +106,7 @@
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
-        />
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -114,7 +119,7 @@
         android:layout_centerHorizontal="true"
         android:backgroundTint="@color/material_dynamic_neutral_variant80"
         android:layout_margin="20dp"
-        />
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -126,8 +131,7 @@
         android:layout_centerHorizontal="true"
 
 
-
-        />
+        tools:ignore="HardcodedText" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -141,7 +145,7 @@
             android:layout_height="48dp"
             android:src="@drawable/google"
             android:id="@+id/GoogleBTN"
-            />
+            tools:ignore="ContentDescription" />
 
 
     </LinearLayout>
