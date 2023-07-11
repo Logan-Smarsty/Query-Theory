@@ -16,6 +16,18 @@
         android:theme="@style/Theme.IronDeersQueryTheory"
         tools:targetApi="31">
         <activity
+            android:name=".EnglishQuestion"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryQuestion"
+            android:exported="false" />
+        <activity
+            android:name=".ScienceQuestion"
+            android:exported="false" />
+        <activity
+            android:name=".MathQuestion"
+            android:exported="false" />
+        <activity
             android:name=".StartScreen"
             android:exported="true" >
             <intent-filter>
