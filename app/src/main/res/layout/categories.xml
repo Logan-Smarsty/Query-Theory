@@ -4,16 +4,5 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Categories">
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="188dp"
-        android:layout_height="152dp"
-        android:text="HI VIG"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:background="@drawable/__categories_9f72a"
+    tools:context=".Categories"/>
