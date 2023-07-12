@@ -9,8 +9,8 @@
     android:visibility="visible"
     tools:context=".MainActivity"
     tools:visibility="visible"
-    android:background="@drawable/query_logo">
-    <!-- -->
+    android:background="@drawable/query_logo"
+    >   <!-- -->
     <!-- android:foreground="@drawable/query_logo"-->
     <!--<ImageView
         android:layout_width="match_parent"
@@ -35,6 +35,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.041"
         tools:ignore="TextContrastCheck" />
+
 
     <Button
         android:id="@+id/homeScreen"
@@ -62,6 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/signin"
         android:layout_marginStart="10dp"
+
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
@@ -73,12 +75,14 @@
         android:textStyle="bold"
         tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
 
+
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/username"
         android:layout_marginStart="10dp"
+
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
@@ -125,6 +129,8 @@
         android:textStyle="bold"
         android:text="Or sign in with:"
         android:layout_centerHorizontal="true"
+
+
         tools:ignore="HardcodedText" />
 
     <LinearLayout
@@ -140,6 +146,18 @@
             android:src="@drawable/google"
             android:id="@+id/GoogleBTN"
             tools:ignore="ContentDescription" />
+
+
     </LinearLayout>
+
+
+
+
+
+
+
+
+
+
 
 </RelativeLayout>

@@ -59,8 +59,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin"))
                 {
-                    Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-
+                        Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(MainActivity.this, Categories.class);
+                        startActivity(intent);
                 }
                 else
                 {
@@ -77,20 +78,4 @@ public class MainActivity extends AppCompatActivity {
     {
         Intent signInIntent = gsc.getSignInIntent();
         startActivityForResult(signInIntent, 1000);
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+    }};
