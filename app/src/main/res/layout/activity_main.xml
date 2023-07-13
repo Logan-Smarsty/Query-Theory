@@ -121,11 +121,11 @@
         android:gravity="center">
 
         <ImageView
+            android:id="@+id/GoogleBTN"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/google"
-            android:id="@+id/GoogleBTN"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription,ImageContrastCheck" />
 
 
     </LinearLayout>
