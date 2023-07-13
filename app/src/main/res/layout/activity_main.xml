@@ -1,34 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:addStatesFromChildren="true"
     android:alpha="1"
-    android:background="@drawable/query_logo"
     android:visibility="visible"
     tools:context=".MainActivity"
-    tools:visibility="visible">   <!-- -->
+    tools:visibility="visible"
+    android:background="@drawable/query_logo"
+    >   <!-- -->
     <!-- android:foreground="@drawable/query_logo"-->
     <!--<ImageView
         android:layout_width="match_parent"
         android:layout_height="4000dp"
         android:src="@drawable/query_logo" />-->
 
+    <Button
+        android:id="@+id/homeScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/button"
+        android:visibility="invisible"
+        tools:ignore="VisualLintButtonSize" />
+
     <TextView
-        android:id="@+id/signin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_margin="50dp"
         android:gravity="center"
         android:text="Sign in"
         android:textColor="@color/black"
         android:textSize="35dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:id="@+id/signin"
+        tools:ignore="HardcodedText,SpUsage" />
 
     <EditText
         android:id="@+id/username"
@@ -40,13 +47,13 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:backgroundTint="@color/black"
         android:drawableLeft="@drawable/baseline_person_24"
         android:drawablePadding="20dp"
         android:hint="Username"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
 
 
     <EditText
@@ -59,67 +66,76 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:backgroundTint="@color/black"
         android:drawableLeft="@drawable/baseline_lock_24"
         android:drawablePadding="20dp"
         android:hint="Password"
         android:inputType="textPassword"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/LogIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/LogIn"
         android:layout_below="@id/password"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/material_dynamic_neutral_variant80"
         android:text="Log In"
+        android:backgroundTint="@color/material_dynamic_neutral_variant80"
         android:textColor="@color/black"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/forgotpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/forgotpass"
         android:layout_below="@id/LogIn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/material_dynamic_neutral_variant80"
         android:text="Forgot Password?"
         android:textColor="@color/black"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/material_dynamic_neutral_variant80"
+        android:layout_margin="20dp"
+        tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/Others"
-        android:layout_width="133dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="85dp"
-        android:text="Or sign in with:"
-        android:textAlignment="center"
+        android:id="@+id/Others"
+        android:layout_above="@id/GoogleSignIn"
         android:textStyle="bold"
-        android:layout_centerHorizontal="true"/>
+        android:text="Or sign in with:"
+        android:layout_centerHorizontal="true"
 
-    <ImageView
-        android:id="@+id/GoogleBTN"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
+
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/GoogleSignIn"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="678dp"
-        android:layout_marginEnd="187dp"
-        android:layout_marginBottom="5dp"
-        android:src="@drawable/google" />
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/google"
+            android:id="@+id/GoogleBTN"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
 
 
 </RelativeLayout>
