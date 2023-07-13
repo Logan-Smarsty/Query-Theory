@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.994"
-        app:srcCompat="@drawable/baseline_category_24" />
+        app:srcCompat="@drawable/baseline_category_2" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -30,7 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/baseline_scoreboard_24" />
+        app:srcCompat="@drawable/baseline_scoreboard_2" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -42,7 +42,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.998"
-        app:srcCompat="@drawable/baseline_home_24" />
+        app:srcCompat="@drawable/baseline_home_2" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -54,5 +54,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.994"
-        app:srcCompat="@drawable/baseline_person_24" />
+        app:srcCompat="@drawable/baseline_person_2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
