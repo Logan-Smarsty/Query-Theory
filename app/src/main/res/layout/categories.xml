@@ -9,6 +9,21 @@
     tools:context=".Categories"
     tools:visibility="visible">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="363dp"
+        android:layout_height="88dp"
+        android:text="CATEGORIES"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
     <Button
         android:id="@+id/CatMath"
         android:layout_width="206dp"
@@ -112,4 +127,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/baseline_scoreboard_24" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
