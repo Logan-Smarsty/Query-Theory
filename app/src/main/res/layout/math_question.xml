@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/_0_incorrectanswer_d7819"
+
+    android:background="#1c1a5e"
     tools:context=".MathQuestion">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
