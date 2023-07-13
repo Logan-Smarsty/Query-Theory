@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="#1c1a5e"
+    android:background="@drawable/mathscreen1_026ef"
     tools:context=".MathQuestion">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
