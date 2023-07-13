@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/__quizquestion_b3ae8"
+    android:background="@drawable/historyscreen1_7eeb3"
     tools:context=".HistoryQuestion">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
