@@ -42,7 +42,7 @@
         android:id="@+id/CatScience"
         android:layout_width="199dp"
         android:layout_height="213dp"
-        android:text="Button"
+        android:text=""
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,7 +56,7 @@
         android:id="@+id/CatHistory"
         android:layout_width="195dp"
         android:layout_height="245dp"
-        android:text="Button"
+        android:text=""
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,7 +70,7 @@
         android:id="@+id/CatEnglish"
         android:layout_width="211dp"
         android:layout_height="245dp"
-        android:text="Button"
+        android:text=""
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,18 +91,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.997"
         app:srcCompat="@drawable/baseline_home_24" />
-
-    <ImageView
-        android:id="@+id/CatScreen"
-        android:layout_width="100dp"
-        android:layout_height="61dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.998"
-        app:srcCompat="@drawable/baseline_category_24" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -127,5 +115,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/baseline_scoreboard_24" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="86dp"
+        android:layout_height="59dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995"
+        app:srcCompat="@drawable/baseline_category_25" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
