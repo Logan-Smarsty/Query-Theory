@@ -18,27 +18,25 @@ import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.button.MaterialButton;
 
-public class MainActivity extends AppCompatActivity {
-
-
+public class MainActivity extends AppCompatActivity
+{
     GoogleSignInOptions gso;
-
     GoogleSignInClient gsc;
-
     ImageView GoogleBtn;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         GoogleBtn = findViewById(R.id.GoogleBTN);
 
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         gsc = GoogleSignIn.getClient(this,gso);
 
-        GoogleBtn.setOnClickListener(new View.OnClickListener() {
+        GoogleBtn.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v) {signIn();}
         });
@@ -51,14 +49,15 @@ public class MainActivity extends AppCompatActivity {
 
         //admin account info
 
-
-        LoginIn.setOnClickListener(new View.OnClickListener() {
+        LoginIn.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin"))
                 {
                         Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(MainActivity.this, Categories.class);
+                        Intent intent = new Intent(MainActivity.this, CategoryUpdate.class);
                         startActivity(intent);
                 }
                 else
@@ -69,15 +68,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
-
-
     void signIn()
     {
 
         Intent signInIntent = gsc.getSignInIntent();
 
-        Intent intent = new Intent(MainActivity.this, Categories.class);
+        Intent intent = new Intent(MainActivity.this, CategoryUpdate.class);
         startActivity(intent);
         startActivityForResult(signInIntent, 1000);
 
