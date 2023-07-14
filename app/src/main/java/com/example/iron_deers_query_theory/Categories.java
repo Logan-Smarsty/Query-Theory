@@ -18,7 +18,7 @@ public class Categories extends AppCompatActivity {
     Button Science;
     Button English;
     Button History;
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint({"MissingInflatedId", "UseCompatLoadingForDrawables"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,5 +58,8 @@ public class Categories extends AppCompatActivity {
             Intent intent = new Intent(Categories.this, HistoryQuestion.class);
             startActivity(intent);
         });
+        final ImageView image = (ImageView) findViewById(R.id.CatScreen);
+
+
     }
 }
