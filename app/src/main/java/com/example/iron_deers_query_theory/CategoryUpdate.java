@@ -28,13 +28,16 @@ public class CategoryUpdate extends AppCompatActivity
            if (itemId == id.home)
            {
                replaceFragment(new HomeFragment());
-           } else if (itemId == id.category)
+           }
+           else if (itemId == id.category)
            {
                replaceFragment(new CategoryFragment());
-           } else if (itemId == id.settings)
+           }
+           else if (itemId == id.settings)
            {
                replaceFragment(new SettingsFragment());
-           } else if (itemId == id.scores)
+           }
+           else if (itemId == id.scores)
            {
                replaceFragment(new ScoresFragment());
            }
