@@ -13,53 +13,6 @@
     android:background="@drawable/mathscreen1_026ef"
     tools:context=".MathQuestion">
 
-    <ImageView
-        android:id="@+id/Cat"
-        android:layout_width="84dp"
-        android:layout_height="61dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.388"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.994"
-        app:srcCompat="@drawable/baseline_category_2" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="78dp"
-        android:layout_height="65dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.696"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/baseline_scoreboard_2" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="88dp"
-        android:layout_height="64dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.998"
-        app:srcCompat="@drawable/baseline_home_2" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="74dp"
-        android:layout_height="61dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.953"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.994"
-        app:srcCompat="@drawable/baseline_person_2" />
 
 >>>>>>> acb390980ed917bb7a6b1a97ce8aaaa107842199
 </androidx.constraintlayout.widget.ConstraintLayout>
