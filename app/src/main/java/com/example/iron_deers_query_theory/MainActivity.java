@@ -1,21 +1,19 @@
 package com.example.iron_deers_query_theory;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.api.ApiException;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity
@@ -24,6 +22,8 @@ public class MainActivity extends AppCompatActivity
     GoogleSignInClient gsc;
     ImageView GoogleBtn;
 
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -35,11 +35,7 @@ public class MainActivity extends AppCompatActivity
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         gsc = GoogleSignIn.getClient(this,gso);
 
-        GoogleBtn.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v) {signIn();}
-        });
+        GoogleBtn.setOnClickListener(v -> signIn());
 
 
         TextView username = findViewById(R.id.username);
@@ -49,21 +45,16 @@ public class MainActivity extends AppCompatActivity
 
         //admin account info
 
-        LoginIn.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
+        LoginIn.setOnClickListener(v -> {
+            if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin"))
             {
-                if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin"))
-                {
-                        Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(MainActivity.this, CategoryUpdate.class);
-                        startActivity(intent);
-                }
-                else
-                {
-                    Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
-                }
+                Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, CategoryUpdate.class);
+                startActivity(intent);
+            }
+            else
+            {
+                Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -78,4 +69,4 @@ public class MainActivity extends AppCompatActivity
         startActivityForResult(signInIntent, 1000);
 
 
-    }};
+    }}
