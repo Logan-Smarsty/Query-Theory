@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mathscreen1_026ef"
+    tools:context=".mathQuestion4">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="304dp"
+        android:layout_height="143dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="What is the Pythagorean Theorem?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="97dp" />
+    <!-- Answer: a^2 + b^2 = c^2 -->
+
+    <Button
+        android:id="@+id/mq4.1"
+        android:layout_width="268dp"
+        android:layout_height="60dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="a^2 + b^2 = c^2"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <Button
+        android:id="@+id/mq4.2"
+        android:layout_width="268dp"
+        android:layout_height="60dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="a^2 = b^2 + c^2"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <Button
+        android:id="@+id/mq4.3"
+        android:layout_width="268dp"
+        android:layout_height="60dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="a^2 + b^2 = 0"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="481dp" />
+
+    <Button
+        android:id="@+id/mq4.4"
+        android:layout_width="268dp"
+        android:layout_height="60dp"
+        android:background="@color/grey"
+        android:fontFamily="@font/nunito_bold"
+        android:text="a^2 - b^2 = c^2"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="584dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

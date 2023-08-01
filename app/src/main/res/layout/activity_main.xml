@@ -9,8 +9,7 @@
     android:visibility="visible"
     tools:context=".MainActivity"
     tools:visibility="visible"
-    android:background="@drawable/query_logo"
-    >   <!-- -->
+    android:background="@drawable/query_logo">   <!-- -->
     <!-- android:foreground="@drawable/query_logo"-->
     <!--<ImageView
         android:layout_width="match_parent"
@@ -54,7 +53,6 @@
         android:textColorHint="@color/black"
         android:textStyle="bold"
         tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
-
 
     <EditText
         android:id="@+id/password"
@@ -127,15 +125,6 @@
             android:src="@drawable/google"
             tools:ignore="ContentDescription,ImageContrastCheck" />
 
-
     </LinearLayout>
-
-
-
-
-
-
-
-
 
 </RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mathscreen1_026ef"
+    tools:context=".mathQuestion1">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="330dp"
+        android:layout_height="104dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="What is the square root of 25?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="135dp" />
+    <!-- Answer: 5 -->
+
+    <Button
+        android:id="@+id/mq1.1"
+        android:layout_width="268dp"
+        android:layout_height="60dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="5"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <Button
+        android:id="@+id/mq1.2"
+        android:layout_width="268dp"
+        android:layout_height="60dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="10"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <Button
+        android:id="@+id/mq1.3"
+        android:layout_width="268dp"
+        android:layout_height="60dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="3"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="481dp" />
+
+    <Button
+        android:id="@+id/mq1.4"
+        android:layout_width="268dp"
+        android:layout_height="60dp"
+        android:background="@color/grey"
+        android:fontFamily="@font/nunito_bold"
+        android:text="None of the Above"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="584dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,13 +15,43 @@
         android:theme="@style/Theme.IronDeersQueryTheory"
         tools:targetApi="31">
         <activity
+            android:name=".mathQuestion10"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion9"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion8"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion7"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion6"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion5"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion4"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion3"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion2"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion1"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".CategoryUpdate"
@@ -40,9 +70,7 @@
             android:exported="false" />
         <activity
             android:name=".StartScreen"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
