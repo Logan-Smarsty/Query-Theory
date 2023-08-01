@@ -6,8 +6,4 @@
     android:layout_height="match_parent"
     android:background="@drawable/sciencescreen2_18a02"
     tools:context=".ScienceQuestion">
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
