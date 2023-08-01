@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mathscreen1_026ef"
-    tools:context=".mathQuestion1">
+    tools:context=".mathQuestion5">
 
     <TextView
         android:id="@+id/textView3"
@@ -19,6 +19,7 @@
         android:textSize="34sp"
         tools:layout_editor_absoluteX="49dp"
         tools:layout_editor_absoluteY="133dp" />
+    <!-- Answer: 1 -->
 
     <Button
         android:id="@+id/mq5.1"

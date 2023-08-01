@@ -15,6 +15,21 @@
         android:theme="@style/Theme.IronDeersQueryTheory"
         tools:targetApi="31">
         <activity
+            android:name=".mathQuestion10"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion9"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion8"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion7"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion6"
+            android:exported="false" />
+        <activity
             android:name=".mathQuestion5"
             android:exported="false" />
         <activity
