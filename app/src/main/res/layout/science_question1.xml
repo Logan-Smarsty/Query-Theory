@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sciencescreen2_18a02"
+    tools:context=".scienceQuestion1">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="389dp"
+        android:layout_height="112dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="What is the Periodic Symbol for Iron?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="41dp" />
+    <!-- Answer: Fe -->
+
+    <Button
+        android:id="@+id/sq1.2"
+        android:layout_width="268dp"
+        android:layout_height="60dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Fr"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <Button
+        android:id="@+id/sq1.4"
+        android:layout_width="268dp"
+        android:layout_height="60dp"
+        android:background="@color/grey"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Fe"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="515dp" />
+
+    <Button
+        android:id="@+id/sq1.1"
+        android:layout_width="268dp"
+        android:layout_height="60dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="In"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <Button
+        android:id="@+id/sq1.3"
+        android:layout_width="268dp"
+        android:layout_height="60dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Ir"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="412dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
