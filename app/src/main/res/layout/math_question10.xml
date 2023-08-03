@@ -22,7 +22,7 @@
     <!-- Answer: -½, -1 -->
 
     <Button
-        android:id="@+id/mq10.1"
+        android:id="@+id/mq10_1"
         android:layout_width="268dp"
         android:layout_height="60dp"
         android:background="@color/back"
@@ -31,21 +31,21 @@
         android:textAlignment="center"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="276dp" />
+        tools:layout_editor_absoluteY="275dp" />
 
     <Button
-        android:id="@+id/mq10.2"
+        android:id="@+id/mq10_2"
         android:layout_width="268dp"
         android:layout_height="60dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
         android:text="½, -1"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="379dp" />
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="380dp" />
 
     <Button
-        android:id="@+id/mq10.3"
+        android:id="@+id/mq10_3"
         android:layout_width="268dp"
         android:layout_height="60dp"
         android:background="@color/back"
@@ -53,10 +53,10 @@
         android:text="-½, -1"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="481dp" />
+        tools:layout_editor_absoluteY="480dp" />
 
     <Button
-        android:id="@+id/mq10.4"
+        android:id="@+id/mq10_4"
         android:layout_width="268dp"
         android:layout_height="60dp"
         android:background="@color/grey"
@@ -64,5 +64,6 @@
         android:text="-½, 1"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="584dp" />
+        tools:layout_editor_absoluteY="580dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

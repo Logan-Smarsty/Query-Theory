@@ -4,66 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sciencescreen2_18a02"
-    tools:context=".scienceQuestion1">
+    android:background="@drawable/sciencescreen1_15a27"
+    tools:context=".scienceQuestion10">
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="389dp"
-        android:layout_height="112dp"
+        android:layout_width="412dp"
+        android:layout_height="104dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="What is the Periodic Symbol for Iron?"
+        android:text="What do animal cells have that plant cells do not?"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="41dp" />
-    <!-- Answer: Fe -->
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="61dp" />
+    <!-- Answer: Lysosomes) -->
 
     <Button
-        android:id="@+id/sq1_1"
-        android:layout_width="268dp"
-        android:layout_height="60dp"
+        android:id="@+id/sq10_1"
+        android:layout_width="254dp"
+        android:layout_height="48dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="In"
+        android:text="Cell Wall"
         android:textAlignment="center"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteX="78dp"
         tools:layout_editor_absoluteY="215dp" />
 
     <Button
-        android:id="@+id/sq1_2"
-        android:layout_width="268dp"
-        android:layout_height="60dp"
+        android:id="@+id/sq10_2"
+        android:layout_width="254dp"
+        android:layout_height="48dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="Fr"
+        android:text="Chloroplasts"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteX="78dp"
         tools:layout_editor_absoluteY="330dp" />
 
     <Button
-        android:id="@+id/sq1_3"
-        android:layout_width="268dp"
-        android:layout_height="60dp"
+        android:id="@+id/sq10_3"
+        android:layout_width="254dp"
+        android:layout_height="48dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="Ir"
+        android:text="Vacuole"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteX="78dp"
         tools:layout_editor_absoluteY="445dp" />
 
     <Button
-        android:id="@+id/sq1_4"
-        android:layout_width="268dp"
-        android:layout_height="60dp"
-        android:background="@color/grey"
+        android:id="@+id/sq10_4"
+        android:layout_width="254dp"
+        android:layout_height="48dp"
+        android:background="@color/black"
         android:fontFamily="@font/nunito_bold"
-        android:text="Fe"
+        android:text="Lysosomes"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteX="78dp"
         tools:layout_editor_absoluteY="560dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

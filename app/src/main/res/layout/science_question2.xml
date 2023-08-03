@@ -22,18 +22,7 @@
     <!-- Answer: Photosynthesis -->
 
     <Button
-        android:id="@+id/sq2.2"
-        android:layout_width="268dp"
-        android:layout_height="60dp"
-        android:background="@color/back"
-        android:fontFamily="@font/nunito_bold"
-        android:text="Fibromyalgia"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="318dp" />
-
-    <Button
-        android:id="@+id/sq2.1"
+        android:id="@+id/sq2_1"
         android:layout_width="268dp"
         android:layout_height="60dp"
         android:background="@color/back"
@@ -45,18 +34,18 @@
         tools:layout_editor_absoluteY="215dp" />
 
     <Button
-        android:id="@+id/sq2.4"
+        android:id="@+id/sq2_2"
         android:layout_width="268dp"
         android:layout_height="60dp"
-        android:background="@color/grey"
+        android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="Phototropism"
+        android:text="Fibromyalgia"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="523dp" />
+        tools:layout_editor_absoluteY="330dp" />
 
     <Button
-        android:id="@+id/sq2.3"
+        android:id="@+id/sq2_3"
         android:layout_width="268dp"
         android:layout_height="60dp"
         android:background="@color/back"
@@ -64,6 +53,17 @@
         android:text="Photosynthesis"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="420dp" />
+        tools:layout_editor_absoluteY="445dp" />
+
+    <Button
+        android:id="@+id/sq2_4"
+        android:layout_width="268dp"
+        android:layout_height="60dp"
+        android:background="@color/grey"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Phototropism"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="560dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

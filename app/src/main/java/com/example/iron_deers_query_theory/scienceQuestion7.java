@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class scienceQuestion5 extends AppCompatActivity {
+public class scienceQuestion7 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.science_question5);
+        setContentView(R.layout.science_question7);
     }
 }
