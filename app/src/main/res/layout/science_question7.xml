@@ -4,67 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mathscreen1_026ef"
-    tools:context=".mathQuestion9">
-
-    <!-- Answer: tan(x) -->
+    android:background="@drawable/sciencescreen1_15a27"
+    tools:context=".scienceQuestion7">
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="306dp"
-        android:layout_height="121dp"
+        android:layout_width="322dp"
+        android:layout_height="136dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="What is sin(x)/cos(x)?"
+        android:text="How many systems run the human body?"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="114dp" />
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="47dp" />
+    <!-- Answer: 11 -->
 
     <Button
-        android:id="@+id/mq9_1"
+        android:id="@+id/sq7_1"
         android:layout_width="268dp"
         android:layout_height="60dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="cot(x)"
+        android:text="16"
         android:textAlignment="center"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="275dp" />
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="215dp" />
 
     <Button
-        android:id="@+id/mq9_2"
+        android:id="@+id/sq7_2"
         android:layout_width="268dp"
         android:layout_height="60dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="tan(x)"
+        android:text="11"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="380dp" />
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="330dp" />
 
     <Button
-        android:id="@+id/mq9_3"
+        android:id="@+id/sq7_3"
         android:layout_width="268dp"
         android:layout_height="60dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="sec(x)"
+        android:text="10"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="480dp" />
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="445dp" />
 
     <Button
-        android:id="@+id/mq9_4"
+        android:id="@+id/sq7_4"
         android:layout_width="268dp"
         android:layout_height="60dp"
-        android:background="@color/grey"
+        android:background="@color/black"
         android:fontFamily="@font/nunito_bold"
-        android:text="1"
+        android:text="20"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="580dp" />
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="560dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

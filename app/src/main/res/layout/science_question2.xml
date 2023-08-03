@@ -4,67 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mathscreen1_026ef"
-    tools:context=".mathQuestion9">
-
-    <!-- Answer: tan(x) -->
+    android:background="@drawable/sciencescreen2_18a02"
+    tools:context=".scienceQuestion2">
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="306dp"
-        android:layout_height="121dp"
+        android:layout_width="439dp"
+        android:layout_height="187dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="What is sin(x)/cos(x)?"
+        android:text="What is the word to describe the process of a flower absorbing sunlight to make energy for itself?"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="114dp" />
+        tools:layout_editor_absoluteX="-13dp"
+        tools:layout_editor_absoluteY="-1dp" />
+    <!-- Answer: Photosynthesis -->
 
     <Button
-        android:id="@+id/mq9_1"
+        android:id="@+id/sq2_1"
         android:layout_width="268dp"
         android:layout_height="60dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="cot(x)"
+        android:text="Philadelphus"
         android:textAlignment="center"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="275dp" />
+        tools:layout_editor_absoluteY="215dp" />
 
     <Button
-        android:id="@+id/mq9_2"
+        android:id="@+id/sq2_2"
         android:layout_width="268dp"
         android:layout_height="60dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="tan(x)"
+        android:text="Fibromyalgia"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="380dp" />
+        tools:layout_editor_absoluteY="330dp" />
 
     <Button
-        android:id="@+id/mq9_3"
+        android:id="@+id/sq2_3"
         android:layout_width="268dp"
         android:layout_height="60dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="sec(x)"
+        android:text="Photosynthesis"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="480dp" />
+        tools:layout_editor_absoluteY="445dp" />
 
     <Button
-        android:id="@+id/mq9_4"
+        android:id="@+id/sq2_4"
         android:layout_width="268dp"
         android:layout_height="60dp"
         android:background="@color/grey"
         android:fontFamily="@font/nunito_bold"
-        android:text="1"
+        android:text="Phototropism"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="580dp" />
+        tools:layout_editor_absoluteY="560dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

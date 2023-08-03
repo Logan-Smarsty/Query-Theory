@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sciencescreen1_15a27"
+    tools:context=".scienceQuestion5">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="322dp"
+        android:layout_height="136dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="What is the range of all types of EM radiation called?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="47dp" />
+    <!-- Answer: Electromagnetic Spectrum -->
+
+    <Button
+        android:id="@+id/sq5_1"
+        android:layout_width="348dp"
+        android:layout_height="60dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Empirical Samarium"
+         android:textAlignment="center"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <Button
+        android:id="@+id/sq5_2"
+        android:layout_width="348dp"
+        android:layout_height="60dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Electromagnetic Spectrum"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <Button
+        android:id="@+id/sq5_3"
+        android:layout_width="348dp"
+        android:layout_height="60dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Endothermic Mutation"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="445dp" />
+
+    <Button
+        android:id="@+id/sq5_4"
+        android:layout_width="348dp"
+        android:layout_height="60dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Excretion Mimicry"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="560dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
