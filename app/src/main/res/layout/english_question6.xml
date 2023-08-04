@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/englishscreen1_6b802"
+    tools:context=".englishQuestion6">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="298dp"
+        android:layout_height="140dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Which word rhymes with bough?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="46dp" />
+    <!-- Answer: Dough -->
+
+    <Button
+        android:id="@+id/eq6_1"
+        android:layout_width="298dp"
+        android:layout_height="57dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Through"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <Button
+        android:id="@+id/eq6_2"
+        android:layout_width="298dp"
+        android:layout_height="57dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Cough"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <Button
+        android:id="@+id/eq6_3"
+        android:layout_width="298dp"
+        android:layout_height="57dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Dough"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="445dp" />
+
+    <Button
+        android:id="@+id/eq6_4"
+        android:layout_width="298dp"
+        android:layout_height="57dp"
+        android:background="@color/black"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Tough"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="560dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
