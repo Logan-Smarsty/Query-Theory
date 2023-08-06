@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/historyscreen2_50a5a"
+    tools:context=".historyQuestion1">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="373dp"
+        android:layout_height="141dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="What Year did Christopher Columbus discover the Americas?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="27dp" />
+    <!-- Answer: 1492 -->
+
+    <Button
+        android:id="@+id/hq1_1"
+        android:layout_width="298dp"
+        android:layout_height="57dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="1429"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <Button
+        android:id="@+id/hq1_2"
+        android:layout_width="298dp"
+        android:layout_height="57dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="1776"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <Button
+        android:id="@+id/hq1_3"
+        android:layout_width="298dp"
+        android:layout_height="57dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="1942"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="445dp" />
+
+    <Button
+        android:id="@+id/hq1_4"
+        android:layout_width="298dp"
+        android:layout_height="57dp"
+        android:background="@color/black"
+        android:fontFamily="@font/nunito_bold"
+        android:text="1492"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="560dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
