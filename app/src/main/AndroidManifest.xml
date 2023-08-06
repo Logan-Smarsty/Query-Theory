@@ -15,6 +15,36 @@
         android:theme="@style/Theme.IronDeersQueryTheory"
         tools:targetApi="31">
         <activity
+            android:name=".englishQuestion10"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion9"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion8"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion7"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion6"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion5"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion4"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion3"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion2"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion1"
+            android:exported="false" />
+        <activity
             android:name=".scienceQuestion10"
             android:exported="false" />
         <activity

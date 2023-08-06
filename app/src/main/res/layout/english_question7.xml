@@ -4,66 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sciencescreen1_15a27"
-    tools:context=".scienceQuestion8">
+    android:background="@drawable/englishscreen1_6b802"
+    tools:context=".englishQuestion7">
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="361dp"
-        android:layout_height="59dp"
+        android:layout_width="334dp"
+        android:layout_height="102dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="Which is a vital organ?"
+        android:text="How many syllables are in caramel?"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="97dp" />
-    <!-- Answer: Liver -->
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="46dp" />
+    <!-- Answer: 3 -->
 
     <Button
-        android:id="@+id/sq8_1"
-        android:layout_width="268dp"
-        android:layout_height="60dp"
+        android:id="@+id/eq7_1"
+        android:layout_width="298dp"
+        android:layout_height="57dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="Stomach"
+        android:text="3"
         android:textAlignment="center"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteX="56dp"
         tools:layout_editor_absoluteY="215dp" />
 
     <Button
-        android:id="@+id/sq8_2"
-        android:layout_width="268dp"
-        android:layout_height="60dp"
+        android:id="@+id/eq7_2"
+        android:layout_width="298dp"
+        android:layout_height="57dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="Intestines"
+        android:text="2"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteX="56dp"
         tools:layout_editor_absoluteY="330dp" />
 
     <Button
-        android:id="@+id/sq8_3"
-        android:layout_width="268dp"
-        android:layout_height="60dp"
+        android:id="@+id/eq7_3"
+        android:layout_width="298dp"
+        android:layout_height="57dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
-        android:text="Liver"
+        android:text="1"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteX="56dp"
         tools:layout_editor_absoluteY="445dp" />
 
     <Button
-        android:id="@+id/sq8_4"
-        android:layout_width="268dp"
-        android:layout_height="60dp"
+        android:id="@+id/eq7_4"
+        android:layout_width="298dp"
+        android:layout_height="57dp"
         android:background="@color/black"
         android:fontFamily="@font/nunito_bold"
-        android:text="Pancreas"
+        android:text="23"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteX="56dp"
         tools:layout_editor_absoluteY="560dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
