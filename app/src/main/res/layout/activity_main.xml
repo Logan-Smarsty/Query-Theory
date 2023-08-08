@@ -74,16 +74,19 @@
         tools:ignore="Autofill,HardcodedText,RtlHardcoded,TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/LogIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/LogIn"
         android:layout_below="@id/password"
-        android:text="Log In"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="@color/material_dynamic_neutral_variant80"
+        android:text="Log In"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="20dp"
         tools:ignore="HardcodedText" />
 
     <TextView

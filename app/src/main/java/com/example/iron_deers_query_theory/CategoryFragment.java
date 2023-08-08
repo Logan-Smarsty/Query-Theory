@@ -14,6 +14,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.iron_deers_query_theory.databinding.MathQuestion1Binding;
+import com.example.iron_deers_query_theory.databinding.ScienceQuestion1Binding;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link CategoryFragment#newInstance} factory method to
@@ -90,7 +93,7 @@ public class CategoryFragment extends Fragment
             @Override
             public void onClick(View v)
             {
-               Intent intent = new Intent(getActivity(), EnglishQuestion.class);
+               Intent intent = new Intent(getActivity(), englishQuestion1.class);
                startActivity(intent);
             }
 
@@ -100,7 +103,7 @@ public class CategoryFragment extends Fragment
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(getActivity(), MathQuestion.class);
+                Intent intent = new Intent(getActivity(), mathQuestion1.class);
                 startActivity(intent);
             }
 
@@ -110,7 +113,7 @@ public class CategoryFragment extends Fragment
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(getActivity(), ScienceQuestion.class);
+                Intent intent = new Intent(getActivity(), scienceQuestion1.class);
                 startActivity(intent);
             }
 
