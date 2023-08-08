@@ -15,6 +15,30 @@
         android:theme="@style/Theme.IronDeersQueryTheory"
         tools:targetApi="31">
         <activity
+            android:name=".historyQuestion10"
+            android:exported="false" />
+        <activity
+            android:name=".historyQuestion9"
+            android:exported="false" />
+        <activity
+            android:name=".historyQuestion8"
+            android:exported="false" />
+        <activity
+            android:name=".historyQuestion7"
+            android:exported="false" />
+        <activity
+            android:name=".historyQuestion6"
+            android:exported="false" />
+        <activity
+            android:name=".historyQuestion5"
+            android:exported="false" />
+        <activity
+            android:name=".historyQuestion4"
+            android:exported="false" />
+        <activity
+            android:name=".historyQuestion3"
+            android:exported="false" />
+        <activity
             android:name=".historyQuestion2"
             android:exported="false" />
         <activity
