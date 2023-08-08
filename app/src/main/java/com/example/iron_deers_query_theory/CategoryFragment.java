@@ -123,7 +123,7 @@ public class CategoryFragment extends Fragment
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(getActivity(), HistoryQuestion.class);
+                Intent intent = new Intent(getActivity(), historyQuestion1.class);
                 startActivity(intent);
             }
         });
