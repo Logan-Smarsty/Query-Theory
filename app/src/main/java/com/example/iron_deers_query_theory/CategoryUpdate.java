@@ -20,18 +20,18 @@ public class CategoryUpdate extends AppCompatActivity
         super.onCreate(savedInstanceState);
         binding = ActivityCategoryUpdateBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        replaceFragment(new HomeFragment());
+        replaceFragment(new HomeScreen_Fragment());
 
        binding.bottomNavigationView.setOnItemSelectedListener(item ->
        {
            int itemId = item.getItemId();
-           if (itemId == id.home)
-           {
-               replaceFragment(new HomeFragment());
-           }
-           else if (itemId == id.category)
+           if (itemId == id.category)
            {
                replaceFragment(new CategoryFragment());
+           }
+           else if (itemId == id.home)
+           {
+               replaceFragment(new HomeScreen_Fragment());
            }
            else if (itemId == id.settings)
            {
