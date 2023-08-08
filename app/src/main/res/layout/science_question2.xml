@@ -7,63 +7,94 @@
     android:background="@drawable/sciencescreen2_18a02"
     tools:context=".scienceQuestion2">
 
+    <!-- Answer: Photosynthesis -->
+
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="439dp"
-        android:layout_height="187dp"
+        android:layout_width="387dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="549dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
         android:text="What is the word to describe the process of a flower absorbing sunlight to make energy for itself?"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="-13dp"
-        tools:layout_editor_absoluteY="-1dp" />
-    <!-- Answer: Photosynthesis -->
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/sq2_1"
         android:layout_width="268dp"
         android:layout_height="60dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="456dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
         android:text="Philadelphus"
         android:textAlignment="center"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="215dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/sq2_2"
         android:layout_width="268dp"
         android:layout_height="60dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="341dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
         android:text="Fibromyalgia"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="330dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/sq2_3"
         android:layout_width="268dp"
         android:layout_height="60dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="226dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
         android:text="Photosynthesis"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="445dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/sq2_4"
         android:layout_width="268dp"
         android:layout_height="60dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="111dp"
         android:background="@color/grey"
         android:fontFamily="@font/nunito_bold"
         android:text="Phototropism"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="560dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

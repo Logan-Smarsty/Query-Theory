@@ -11,59 +11,89 @@
         android:id="@+id/textView3"
         android:layout_width="322dp"
         android:layout_height="136dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="548dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
         android:text="What is the range of all types of EM radiation called?"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="47dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <!-- Answer: Electromagnetic Spectrum -->
 
     <Button
         android:id="@+id/sq5_1"
         android:layout_width="348dp"
         android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="456dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
         android:text="Empirical Samarium"
-         android:textAlignment="center"
+        android:textAlignment="center"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="215dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/sq5_2"
         android:layout_width="348dp"
         android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="341dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
         android:text="Electromagnetic Spectrum"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="330dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/sq5_3"
         android:layout_width="348dp"
         android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="226dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
         android:text="Endothermic Mutation"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="445dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/sq5_4"
         android:layout_width="348dp"
         android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="111dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
         android:text="Excretion Mimicry"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="560dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
