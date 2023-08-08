@@ -7,6 +7,8 @@
     android:background="@drawable/englishscreen1_6b802"
     tools:context=".englishQuestion2">
 
+    <!-- Answer: Haiku -->
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="366dp"
@@ -17,9 +19,12 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="2dp" />
-    <!-- Answer: Haiku -->
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
 
     <Button
         android:id="@+id/eq2_1"
@@ -30,8 +35,11 @@
         android:text="Haibun"
         android:textAlignment="center"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="215dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399" />
 
     <Button
         android:id="@+id/eq2_2"
@@ -41,8 +49,12 @@
         android:fontFamily="@font/nunito_bold"
         android:text="Haiku"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="330dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.528" />
 
     <Button
         android:id="@+id/eq2_3"
@@ -52,8 +64,12 @@
         android:fontFamily="@font/nunito_bold"
         android:text="Huitain"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="445dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
 
     <Button
         android:id="@+id/eq2_4"
@@ -63,7 +79,11 @@
         android:fontFamily="@font/nunito_bold"
         android:text="Hayku"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="560dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.817" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

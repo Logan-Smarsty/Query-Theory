@@ -7,6 +7,8 @@
     android:background="@drawable/englishscreen1_6b802"
     tools:context=".englishQuestion7">
 
+    <!-- Answer: 3 -->
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="334dp"
@@ -17,9 +19,12 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="46dp" />
-    <!-- Answer: 3 -->
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
 
     <Button
         android:id="@+id/eq7_1"
@@ -30,8 +35,12 @@
         android:text="3"
         android:textAlignment="center"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="215dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
 
     <Button
         android:id="@+id/eq7_2"
@@ -41,29 +50,43 @@
         android:fontFamily="@font/nunito_bold"
         android:text="2"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="330dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/eq7_3"
         android:layout_width="298dp"
         android:layout_height="57dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="229dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
         android:text="1"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="445dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/eq7_4"
         android:layout_width="298dp"
         android:layout_height="57dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="114dp"
         android:background="@color/black"
         android:fontFamily="@font/nunito_bold"
         android:text="23"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="560dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
