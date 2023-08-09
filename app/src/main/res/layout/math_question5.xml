@@ -7,8 +7,6 @@
     android:background="@drawable/mathscreen1_026ef"
     tools:context=".mathQuestion5">
 
-    <!-- Answer: 1 -->
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="314dp"
@@ -24,7 +22,8 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.136" />
+        app:layout_constraintVertical_bias="0.203" />
+    <!-- Answer: 1 -->
 
     <Button
         android:id="@+id/mq5_1"
@@ -40,7 +39,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.385" />
+        app:layout_constraintVertical_bias="0.411" />
 
     <Button
         android:id="@+id/mq5_2"
@@ -55,7 +54,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
+        app:layout_constraintVertical_bias="0.563" />
 
     <Button
         android:id="@+id/mq5_3"
@@ -70,7 +69,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.706" />
+        app:layout_constraintVertical_bias="0.716" />
 
     <Button
         android:id="@+id/mq5_4"

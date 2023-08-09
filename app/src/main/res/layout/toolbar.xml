@@ -8,5 +8,4 @@
     android:theme="?attr/actionBarTheme"
     android:elevation="4dp"
     app:titleTextColor="@color/black">
-
 </androidx.appcompat.widget.Toolbar>

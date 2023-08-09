@@ -7,8 +7,6 @@
     android:background="@drawable/mathscreen1_026ef"
     tools:context=".mathQuestion6">
 
-    <!-- Answer: PEMDAS -->
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="314dp"
@@ -24,7 +22,8 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.105" />
+        app:layout_constraintVertical_bias="0.211" />
+    <!-- Answer: PEMDAS -->
 
     <Button
         android:id="@+id/mq6_1"
@@ -40,7 +39,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388" />
+        app:layout_constraintVertical_bias="0.411" />
 
     <Button
         android:id="@+id/mq6_2"
@@ -55,7 +54,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.551" />
+        app:layout_constraintVertical_bias="0.563" />
 
     <Button
         android:id="@+id/mq6_3"
@@ -67,10 +66,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.707" />
+        app:layout_constraintVertical_bias="0.716" />
 
     <Button
         android:id="@+id/mq6_4"
@@ -86,5 +85,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.865" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

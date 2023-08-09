@@ -7,12 +7,10 @@
     android:background="@drawable/mathscreen1_026ef"
     tools:context=".mathQuestion9">
 
-    <!-- Answer: tan(x) -->
-
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="306dp"
-        android:layout_height="121dp"
+        android:layout_width="297dp"
+        android:layout_height="106dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
         android:text="What is sin(x)/cos(x)?"
@@ -24,7 +22,8 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.132" />
+        app:layout_constraintVertical_bias="0.212" />
+    <!-- Answer: tan(x) -->
 
     <Button
         android:id="@+id/mq9_1"
@@ -37,9 +36,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.383" />
+        app:layout_constraintVertical_bias="0.414" />
 
     <Button
         android:id="@+id/mq9_2"
@@ -54,7 +54,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543" />
+        app:layout_constraintVertical_bias="0.561" />
 
     <Button
         android:id="@+id/mq9_3"
@@ -66,10 +66,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.709" />
+        app:layout_constraintVertical_bias="0.713" />
 
     <Button
         android:id="@+id/mq9_4"
@@ -84,5 +84,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.883" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

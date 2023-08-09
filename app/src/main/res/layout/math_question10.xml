@@ -7,8 +7,6 @@
     android:background="@drawable/mathscreen1_026ef"
     tools:context=".mathQuestion10">
 
-    <!-- Answer: -½, -1 -->
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="389dp"
@@ -21,9 +19,11 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintVertical_bias="0.198" />
+    <!-- Answer: -½, -1 -->
 
     <Button
         android:id="@+id/mq10_1"
@@ -54,7 +54,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.57" />
+        app:layout_constraintVertical_bias="0.566" />
 
     <Button
         android:id="@+id/mq10_3"
@@ -69,7 +69,7 @@
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.716" />
+        app:layout_constraintVertical_bias="0.718" />
 
     <Button
         android:id="@+id/mq10_4"
@@ -85,5 +85,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.883" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
