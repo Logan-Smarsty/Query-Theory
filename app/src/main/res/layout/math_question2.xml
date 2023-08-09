@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mathscreen1_026ef"
+    android:background="@drawable/mathscreen3"
     tools:context=".mathQuestion2">
 
     <!-- Answer: 180 Degrees -->

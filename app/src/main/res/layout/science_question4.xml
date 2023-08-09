@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sciencescreen1_15a27"
+    android:background="@drawable/sciencescreen3"
     tools:context=".scienceQuestion4">
 
     <TextView
