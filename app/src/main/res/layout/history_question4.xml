@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="388dp"
-        android:layout_height="178dp"
+        android:layout_width="376dp"
+        android:layout_height="179dp"
         android:layout_marginBottom="546dp"
         android:background="@color/back"
         android:fontFamily="@font/nunito_bold"
@@ -20,8 +20,10 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
     <!-- Answer: Pearl Harbor, Hawaii -->
 
     <Button
@@ -85,5 +87,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
