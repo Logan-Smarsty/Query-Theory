@@ -45,7 +45,6 @@
         android:id="@+id/start_Going"
         android:layout_width="193dp"
         android:layout_height="87dp"
-
         android:backgroundTint="#41e5ed"
         android:text="Start Learning"
         android:textColor="@color/black"
@@ -67,5 +66,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.587"
         app:srcCompat="@drawable/query_logo" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

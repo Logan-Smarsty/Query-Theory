@@ -16,13 +16,133 @@
         android:theme="@style/Theme.IronDeersQueryTheory"
         tools:targetApi="tiramisu">
         <activity
+            android:name=".historyQuestion10"
+            android:exported="false" />
+        <activity
+            android:name=".historyQuestion9"
+            android:exported="false" />
+        <activity
+            android:name=".historyQuestion8"
+            android:exported="false" />
+        <activity
+            android:name=".historyQuestion7"
+            android:exported="false" />
+        <activity
+            android:name=".historyQuestion6"
+            android:exported="false" />
+        <activity
+            android:name=".historyQuestion5"
+            android:exported="false" />
+        <activity
+            android:name=".historyQuestion4"
+            android:exported="false" />
+        <activity
+            android:name=".historyQuestion3"
+            android:exported="false" />
+        <activity
+            android:name=".historyQuestion2"
+            android:exported="false" />
+        <activity
+            android:name=".historyQuestion1"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion10"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion9"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion8"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion7"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion6"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion5"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion4"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion3"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion2"
+            android:exported="false" />
+        <activity
+            android:name=".englishQuestion1"
+            android:exported="false" />
+        <activity
+            android:name=".scienceQuestion10"
+            android:exported="false" />
+        <activity
+            android:name=".scienceQuestion9"
+            android:exported="false" />
+        <activity
+            android:name=".scienceQuestion8"
+            android:exported="false" />
+        <activity
+            android:name=".scienceQuestion7"
+            android:exported="false" />
+        <activity
+            android:name=".scienceQuestion6"
+            android:exported="false" />
+        <activity
+            android:name=".scienceQuestion5"
+            android:exported="false" />
+        <activity
+            android:name=".scienceQuestion4"
+            android:exported="false" />
+        <activity
+            android:name=".scienceQuestion3"
+            android:exported="false" />
+        <activity
+            android:name=".scienceQuestion2"
+            android:exported="false" />
+        <activity
+            android:name=".scienceQuestion1"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion10"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion9"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion8"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion7"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion6"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion5"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion4"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion3"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion2"
+            android:exported="false" />
+        <activity
+            android:name=".mathQuestion1"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".CategoryUpdate"
@@ -41,9 +161,7 @@
             android:exported="false" />
         <activity
             android:name=".StartScreen"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sciencescreen1_15a27"
+    tools:context=".scienceQuestion9">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="374dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="570dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="What is the order of classifications?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- Answer: Kingdom, Phylum, Class, Order, Family, Genus, Species) -->
+
+    <Button
+        android:id="@+id/sq9_1"
+        android:layout_width="371dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="433dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Domain, Kingdom, Phylum, Family, Genus, and Species"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sq9_2"
+        android:layout_width="371dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="318dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Kingdom, Phylum, Class, Order, Family, Genus, Species"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sq9_3"
+        android:layout_width="371dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="203dp"
+        android:background="@color/back"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Domain, Phylum, Class, Order, Family, Genus, Species"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sq9_4"
+        android:layout_width="371dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="88dp"
+        android:background="@color/black"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Kingdom, Phylum, Order, Family, Class, Genus, Species"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
