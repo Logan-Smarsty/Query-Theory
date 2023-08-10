@@ -3,16 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/back"
     tools:context=".ScoresFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Scores Fragment"
-        android:textSize="26dp"
-        android:textColor="#E1BEE7"
+        android:layout_width="123dp"
+        android:layout_height="98dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Score:"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
         tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="113dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="0/10" />
+
 </FrameLayout>
