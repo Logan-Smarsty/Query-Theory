@@ -97,6 +97,7 @@ public class ScienceQuestion extends AppCompatActivity
             {
                 timer.cancel();
             }
+            assert timer != null;
             timer.start();
 
             binding.NextBtn.setEnabled(false);
@@ -136,13 +137,11 @@ public class ScienceQuestion extends AppCompatActivity
                 dialog.getWindow().addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
                 dialog.setCancelable(false);
                 dialog.setContentView(R.layout.out_of_time_screen);
-                dialog.findViewById(R.id.Try_again_btn).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(ScienceQuestion.this, CategoryFragment.class);
-                        startActivity(intent);
-                        finish();
-                    }
+                dialog.findViewById(R.id.Try_again_btn).setOnClickListener(v ->
+                {
+                    Intent intent = new Intent(ScienceQuestion.this, CategoryFragment.class);
+                    startActivity(intent);
+                    finish();
                 });
 
                 dialog.show();
@@ -248,7 +247,7 @@ public class ScienceQuestion extends AppCompatActivity
         {
             selectedOption.setBackgroundResource(R.drawable.back_color_red);
 
-            Button correctOption = (Button) binding.OptionContainer.findViewWithTag(list.get(position).getCorrectAnswer());
+            Button correctOption = binding.OptionContainer.findViewWithTag(list.get(position).getCorrectAnswer());
             correctOption.setBackgroundResource(R.drawable.back_color_green);
         }
     }
