@@ -4,14 +4,17 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.animation.Animator;
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.iron_deers_query_theory.Fragments.CategoryFragment;
 import com.example.iron_deers_query_theory.Fragments.ScoresFragment;
 import com.example.iron_deers_query_theory.Classes.QuestionBuild;
 import com.example.iron_deers_query_theory.R;
@@ -36,33 +39,36 @@ public class MathQuestion extends AppCompatActivity
         binding = MathQuestionBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        list.add(new QuestionBuild("What is the square root of 25?",
+        resetTimer();
+        timer.start();
+
+        list.add(new QuestionBuild("Q1: What is the square root of 25?",
                 "5", "10", "3", "None of the above", "5"));
 
-        list.add(new QuestionBuild("What are the angles of a triangle equal to?",
+        list.add(new QuestionBuild(" Q2: What are the angles of a triangle equal to?",
                 "90 degrees", "180 degrees", "60 degrees", "270 degrees", "180 degrees"));
 
-        list.add(new QuestionBuild("What is a dodecahedron?",
+        list.add(new QuestionBuild("Q3: What is a dodecahedron?",
                 "12-sided 2D shape", "20-sided 3D shape", "10-sided 3D shape", "12-sided 3D shape", "12-sided 3D shape"));
 
-        list.add(new QuestionBuild("What is the Pythagorean Theorem?",
+        list.add(new QuestionBuild("Q4: What is the Pythagorean Theorem?",
                 "a^2 + b^2 = c^2", "a^2 = b^2 + c^2", "a^2 + b^2 = 0", "a^2 - b^2 = c^2", "a^2 + b^2 = c^2"));
 
-        list.add(new QuestionBuild("What is the answer to e^0?",
+        list.add(new QuestionBuild("Q5: What is the answer to e^0?",
                 "e", "e^0", "1", "0", "0"));
 
-        list.add(new QuestionBuild("What is the Order of Operations?", "SADMEP", "PEDMSA", "PEMDAS", "DASPEM", "PEMDAS"));
+        list.add(new QuestionBuild(" Q6: What is the Order of Operations?", "SADMEP", "PEDMSA", "PEMDAS", "DASPEM", "PEMDAS"));
 
-        list.add(new QuestionBuild("What is the derivative of 4x^3 + 12x^2 - 6x + 7?",
+        list.add(new QuestionBuild("Q7: What is the derivative of 4x^3 + 12x^2 - 6x + 7?",
                 "12x^2 + 24x + 7", "4x^3 + 12x^2 - 6x", "12x^2 + 24x - 6", "4x^2 + 12x - 6", "4x^2 + 12x - 6"));
 
-        list.add(new QuestionBuild("Which one of the following is an irrational number?",
+        list.add(new QuestionBuild("Q8: Which one of the following is an irrational number?",
                 "√-1", "√10", "-3.4", "⅞", "√10"));
 
-        list.add(new QuestionBuild("What is sin(x)/cos(x)?",
+        list.add(new QuestionBuild("Q9: What is sin(x)/cos(x)?",
                 "cot(x)", "tan(x)", "sec(x)", "1", "tan(x)"));
 
-        list.add(new QuestionBuild("What is x equal to for 4x^2 - 6x + 2?",
+        list.add(new QuestionBuild("Q10: What is x equal to for 4x^2 - 6x + 2?",
                 "½, 1", "½, -1", "-½, -1", "-½, 1", "-½, -1"));
 
         Button quit = findViewById(R.id.Quit_btn);
@@ -80,8 +86,13 @@ public class MathQuestion extends AppCompatActivity
 
         playAnimation(binding.Question, 0,list.get(position).getQuestion());
 
-        binding.NextBtn.setOnClickListener(v -> {
-
+        binding.NextBtn.setOnClickListener(v ->
+        {
+            if(timer != null)
+            {
+                timer.cancel();
+            }
+            timer.start();
 
             binding.NextBtn.setEnabled(false);
             binding.NextBtn.setAlpha((float)0.3);
@@ -102,6 +113,36 @@ public class MathQuestion extends AppCompatActivity
 
             playAnimation(binding.Question, 0, list.get(position).getQuestion());
         });
+    }
+
+    private void resetTimer()
+    {
+        timer = new CountDownTimer(10000, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished)
+            {
+                binding.Time.setText(String.valueOf(millisUntilFinished/1000));
+            }
+
+            @Override
+            public void onFinish()
+            {
+                Dialog dialog = new Dialog(MathQuestion.this);
+                dialog.getWindow().addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
+                dialog.setCancelable(false);
+                dialog.setContentView(R.layout.out_of_time_screen);
+                dialog.findViewById(R.id.Try_again_btn).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MathQuestion.this, CategoryFragment.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                });
+
+                dialog.show();
+            }
+        };
     }
 
     private void playAnimation(View view, int value, String data)
@@ -185,6 +226,11 @@ public class MathQuestion extends AppCompatActivity
 
     private void checkAnswer(Button selectedOption)
     {
+        if(timer != null)
+        {
+            timer.cancel();
+        }
+
         binding.NextBtn.setEnabled(true);
         binding.NextBtn.setAlpha(1);
 

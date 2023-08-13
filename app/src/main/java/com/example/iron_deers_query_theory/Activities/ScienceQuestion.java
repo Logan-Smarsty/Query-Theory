@@ -5,15 +5,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.Animator;
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.iron_deers_query_theory.Classes.QuestionBuild;
+import com.example.iron_deers_query_theory.Fragments.CategoryFragment;
 import com.example.iron_deers_query_theory.Fragments.ScoresFragment;
 import com.example.iron_deers_query_theory.R;
 import com.example.iron_deers_query_theory.databinding.ScienceQuestionBinding;
@@ -38,36 +41,39 @@ public class ScienceQuestion extends AppCompatActivity
         binding = ScienceQuestionBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        list.add(new QuestionBuild("What is the Periodic Symbol for Iron?",
+        resetTimer();
+        timer.start();
+
+        list.add(new QuestionBuild("Q1: What is the Periodic Symbol for Iron?",
                 "In", "Fr", "Ir", "Fe", "Fe"));
 
-        list.add(new QuestionBuild("What is the word to describe the process of a flower absorbing sunlight to make energy for itself?",
+        list.add(new QuestionBuild("Q2: What is the word to describe the process of a flower absorbing sunlight to make energy for itself?",
                 "Philadelphus", "Fibromyalgia", "Photosynthesis", "Phototropism", "Photosynthesis"));
 
-        list.add(new QuestionBuild("How many Alkali metals are there?",
+        list.add(new QuestionBuild("Q3: How many Alkali metals are there?",
                 "5", "6", "8", "10", "6"));
 
-        list.add(new QuestionBuild("How many man-made elements are there?",
+        list.add(new QuestionBuild("Q4: How many man-made elements are there?",
                 "4", "6", "16", "26", "26"));
 
-        list.add(new QuestionBuild("What is the range of all types of EM radiation called?",
+        list.add(new QuestionBuild("Q5: What is the range of all types of EM radiation called?",
                 "Empirical Samarium", "Electromagnetic Spectrum", "Endothermic Mutation", "Excretion Mimicry", "Electromagnetic Spectrum"));
 
-        list.add(new QuestionBuild("How many bones are in the adult human body?",
+        list.add(new QuestionBuild("Q6: How many bones are in the adult human body?",
                 "300", "260", "106", "206", "206"));
 
-        list.add(new QuestionBuild("How many systems run the human body?",
+        list.add(new QuestionBuild("Q7: How many systems run the human body?",
                 "16", "11", "10", "20", "11"));
 
-        list.add(new QuestionBuild("Which one of the following is a vital organ?",
+        list.add(new QuestionBuild("Q8: Which one of the following is a vital organ?",
                 "Stomach", "Intestines", "Liver", "Pancreas", "Liver"));
 
-        list.add(new QuestionBuild("What is the order of classifications?",
+        list.add(new QuestionBuild("Q9: What is the order of classifications?",
                 "Domain, Kingdom, Phylum, Family, Genus, and Species", "Kingdom, Phylum, Class, Order, Family, Genus, Species",
                 "Domain, Phylum, Class, Order, Family, Genus, Species", "Kingdom, Phylum, Order, Family, Class, Genus, Species",
                 "Kingdom, Phylum, Class, Order, Family, Genus, Species"));
 
-        list.add(new QuestionBuild("What do animal cells have that plant cells do not?",
+        list.add(new QuestionBuild("Q10: What do animal cells have that plant cells do not?",
                 "Cell Wall", "Chloroplasts", "Vacuole", "Lysosomes", "Lysosomes"));
 
         Button quit = findViewById(R.id.Quit_btn);
@@ -85,8 +91,13 @@ public class ScienceQuestion extends AppCompatActivity
 
         playAnimation(binding.Question, 0,list.get(position).getQuestion());
 
-        binding.NextBtn.setOnClickListener(v -> {
-
+        binding.NextBtn.setOnClickListener(v ->
+        {
+            if(timer != null)
+            {
+                timer.cancel();
+            }
+            timer.start();
 
             binding.NextBtn.setEnabled(false);
             binding.NextBtn.setAlpha((float)0.3);
@@ -107,6 +118,36 @@ public class ScienceQuestion extends AppCompatActivity
 
             playAnimation(binding.Question, 0, list.get(position).getQuestion());
         });
+    }
+
+    private void resetTimer()
+    {
+        timer = new CountDownTimer(10000, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished)
+            {
+                binding.Time.setText(String.valueOf(millisUntilFinished/1000));
+            }
+
+            @Override
+            public void onFinish()
+            {
+                Dialog dialog = new Dialog(ScienceQuestion.this);
+                dialog.getWindow().addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
+                dialog.setCancelable(false);
+                dialog.setContentView(R.layout.out_of_time_screen);
+                dialog.findViewById(R.id.Try_again_btn).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(ScienceQuestion.this, CategoryFragment.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                });
+
+                dialog.show();
+            }
+        };
     }
 
     private void playAnimation(View view, int value, String data)
@@ -190,6 +231,11 @@ public class ScienceQuestion extends AppCompatActivity
 
     private void checkAnswer(Button selectedOption)
     {
+        if(timer != null)
+        {
+            timer.cancel();
+        }
+
         binding.NextBtn.setEnabled(true);
         binding.NextBtn.setAlpha(1);
 
