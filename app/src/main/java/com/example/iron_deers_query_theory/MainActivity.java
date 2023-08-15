@@ -50,23 +50,20 @@ public class MainActivity extends AppCompatActivity
 
         //admin account info
 
-        LoginIn.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
+        LoginIn.setOnClickListener(v -> {
+            if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin"))
             {
-                if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin"))
-                {
-                        Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(MainActivity.this, CategoryUpdate.class);
-                        startActivity(intent);
-                }
-                else
-                {
-                    Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
-                }
+                Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, CategoryUpdate.class);
+                startActivity(intent);
+            }
+            else
+            {
+                Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
             }
         });
+
+
 
     }
     void signIn()

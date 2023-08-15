@@ -1,11 +1,11 @@
 package com.example.iron_deers_query_theory;
 
-import com.google.firebase.firestore.DocumentId;
+
 
 public class Questionmodel
 {
 
-    @DocumentId
+   // @DocumentId
     private String questionId;
 
     private String answer, question, option_a, option_b, option_c, option_d;
