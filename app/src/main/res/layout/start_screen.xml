@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#1c1a5e"
     android:textAlignment="center"
-    tools:context=".StartScreen"
+    tools:context=".Activities.StartScreen"
     tools:layout_editor_absoluteY="81dp">
 
     <TextView
