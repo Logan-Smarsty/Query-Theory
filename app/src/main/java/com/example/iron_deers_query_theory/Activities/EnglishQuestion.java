@@ -1,6 +1,5 @@
 package com.example.iron_deers_query_theory.Activities;
 
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.animation.Animator;
@@ -73,7 +72,6 @@ public class EnglishQuestion extends AppCompatActivity
         list.add(new QuestionBuild("Q10: Which one of the following was written by Edgar Allan Poe?",
                 "The Raven Cycle", "The Raven King", "The Raven", "The Raven Heir", "The Raven"));
 
-
         Button quit = findViewById(R.id.Quit_btn);
 
         quit.setOnClickListener(v ->
@@ -112,13 +110,11 @@ public class EnglishQuestion extends AppCompatActivity
                 finish();
                 return;
             }
-
             count = 0;
 
             playAnimation(binding.Question, 0, list.get(position).getQuestion());
         });
     }
-
     private void resetTimer()
     {
         timer = new CountDownTimer(10000, 1000) {
@@ -127,7 +123,6 @@ public class EnglishQuestion extends AppCompatActivity
             {
                 binding.Time.setText(String.valueOf(millisUntilFinished/1000));
             }
-
             @Override
             public void onFinish()
             {
@@ -143,12 +138,10 @@ public class EnglishQuestion extends AppCompatActivity
                         finish();
                     }
                 });
-
                 dialog.show();
             }
         };
     }
-
     private void playAnimation(View view, int value, String data)
     {
         view.animate().alpha(value).scaleX(value).scaleY(value).setDuration(500).setStartDelay(100)
@@ -176,19 +169,16 @@ public class EnglishQuestion extends AppCompatActivity
                             {
                                 option = list.get(position).getOpt4();
                             }
-
                             playAnimation(binding.OptionContainer.getChildAt(count), 0, option);
                             count ++;
                         }
                     }
-
                     @SuppressLint("SetTextI18n")
                     @Override
                     public void onAnimationEnd(@NonNull Animator animation)
                     {
                         if(value == 0)
                         {
-
                             try
                             {
                                 ((TextView)view).setText(data);
@@ -198,18 +188,15 @@ public class EnglishQuestion extends AppCompatActivity
                             {
                                 ((Button)view).setText(data);
                             }
-
                             view.setTag(data);
                             playAnimation(view, 1, data);
                         }
                     }
-
                     @Override
                     public void onAnimationCancel(@NonNull Animator animation)
                     {
 
                     }
-
                     @Override
                     public void onAnimationRepeat(@NonNull Animator animation)
                     {
@@ -217,7 +204,6 @@ public class EnglishQuestion extends AppCompatActivity
                     }
                 });
     }
-
     private void enableOption()
     {
         for(int i = 0; i <4; i++)
@@ -227,7 +213,6 @@ public class EnglishQuestion extends AppCompatActivity
             binding.OptionContainer.getChildAt(i).setBackgroundResource(R.drawable.btn_option);
         }
     }
-
     private void checkAnswer(Button selectedOption)
     {
         if(timer != null)
@@ -250,5 +235,4 @@ public class EnglishQuestion extends AppCompatActivity
             correctOption.setBackgroundResource(R.drawable.back_color_green);
         }
     }
-
 }
