@@ -94,6 +94,7 @@ public class HistoryQuestion extends AppCompatActivity
             {
                 timer.cancel();
             }
+            assert timer != null;
             timer.start();
 
             binding.NextBtn.setEnabled(false);
