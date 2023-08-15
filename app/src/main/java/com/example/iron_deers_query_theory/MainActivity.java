@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
         TextView username = findViewById(R.id.username);
         TextView password = findViewById(R.id.password);
 
-        MaterialButton LoginIn = (MaterialButton) findViewById(R.id.LogIn);
+        MaterialButton LoginIn = findViewById(R.id.LogIn);
 
         //admin account info
 
