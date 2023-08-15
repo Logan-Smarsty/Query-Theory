@@ -4,4 +4,15 @@
     <string name="button">Button</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="timeout_better_luck_next_time_dummy">TimeOut! Better luck next time Dummy!:)</string>
+    <string name="todo">TODO</string>
+    <string name="try_again">Try Again</string>
+    <string name="query_theory_is_a_a_quizzing_app_that_rapidly_asks_you_questions_to_keep_up_a_rhythm_while_testing_your_memory">Query Theory is a a quizzing app that rapidly asks you questions to keep up a rhythm while testing your memory.</string>
+    <string name="query_theory_blurb">Query Theory</string>
+    <string name="start_learning">Start Learning</string>
+    <string name="Todo">TODO</string>
+    <string name="homeBurger">Home</string>
+    <string name="categoryBurger">Category</string>
+    <string name="scoresBurger">Scores</string>
+    <string name="Burgersettings">Settings</string>
 </resources>
