@@ -75,7 +75,7 @@ public class MathQuestion extends AppCompatActivity
 
         quit.setOnClickListener(v ->
         {
-            Intent intent = new Intent(MathQuestion.this, CategoryUpdate.class);
+            Intent intent = new Intent(MathQuestion.this, ScoresFragment.class);
             startActivity(intent);
         });
 
