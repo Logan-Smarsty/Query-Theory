@@ -31,7 +31,6 @@ public class MathQuestion extends AppCompatActivity
     private int score = 0;
 
     CountDownTimer timer;
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -92,6 +91,7 @@ public class MathQuestion extends AppCompatActivity
             {
                 timer.cancel();
             }
+            assert timer != null;
             timer.start();
 
             binding.NextBtn.setEnabled(false);
@@ -108,13 +108,11 @@ public class MathQuestion extends AppCompatActivity
                 finish();
                 return;
             }
-
             count = 0;
 
             playAnimation(binding.Question, 0, list.get(position).getQuestion());
         });
     }
-
     private void resetTimer()
     {
         timer = new CountDownTimer(10000, 1000) {
@@ -123,7 +121,6 @@ public class MathQuestion extends AppCompatActivity
             {
                 binding.Time.setText(String.valueOf(millisUntilFinished/1000));
             }
-
             @Override
             public void onFinish()
             {
@@ -139,12 +136,10 @@ public class MathQuestion extends AppCompatActivity
                         finish();
                     }
                 });
-
                 dialog.show();
             }
         };
     }
-
     private void playAnimation(View view, int value, String data)
     {
         view.animate().alpha(value).scaleX(value).scaleY(value).setDuration(500).setStartDelay(100)
@@ -172,19 +167,16 @@ public class MathQuestion extends AppCompatActivity
                             {
                                 option = list.get(position).getOpt4();
                             }
-
                             playAnimation(binding.OptionContainer.getChildAt(count), 0, option);
                             count ++;
                         }
                     }
-
                     @SuppressLint("SetTextI18n")
                     @Override
                     public void onAnimationEnd(@NonNull Animator animation)
                     {
                         if(value == 0)
                         {
-
                             try
                             {
                                 ((TextView)view).setText(data);
@@ -199,13 +191,11 @@ public class MathQuestion extends AppCompatActivity
                             playAnimation(view, 1, data);
                         }
                     }
-
                     @Override
                     public void onAnimationCancel(@NonNull Animator animation)
                     {
 
                     }
-
                     @Override
                     public void onAnimationRepeat(@NonNull Animator animation)
                     {
@@ -213,7 +203,6 @@ public class MathQuestion extends AppCompatActivity
                     }
                 });
     }
-
     private void enableOption()
     {
         for(int i = 0; i <4; i++)
@@ -223,14 +212,12 @@ public class MathQuestion extends AppCompatActivity
             binding.OptionContainer.getChildAt(i).setBackgroundResource(R.drawable.btn_option);
         }
     }
-
     private void checkAnswer(Button selectedOption)
     {
         if(timer != null)
         {
             timer.cancel();
         }
-
         binding.NextBtn.setEnabled(true);
         binding.NextBtn.setAlpha(1);
 
@@ -247,6 +234,4 @@ public class MathQuestion extends AppCompatActivity
             correctOption.setBackgroundResource(R.drawable.back_color_green);
         }
     }
-
-
 }

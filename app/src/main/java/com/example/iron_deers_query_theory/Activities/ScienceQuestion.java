@@ -75,7 +75,6 @@ public class ScienceQuestion extends AppCompatActivity
 
         list.add(new QuestionBuild("Q10: What do animal cells have that plant cells do not?",
                 "Cell Wall", "Chloroplasts", "Vacuole", "Lysosomes", "Lysosomes"));
-
         Button quit = findViewById(R.id.Quit_btn);
 
         quit.setOnClickListener(v ->
@@ -114,13 +113,11 @@ public class ScienceQuestion extends AppCompatActivity
                 finish();
                 return;
             }
-
             count = 0;
 
             playAnimation(binding.Question, 0, list.get(position).getQuestion());
         });
     }
-
     private void resetTimer()
     {
         timer = new CountDownTimer(10000, 1000) {
@@ -129,7 +126,6 @@ public class ScienceQuestion extends AppCompatActivity
             {
                 binding.Time.setText(String.valueOf(millisUntilFinished/1000));
             }
-
             @Override
             public void onFinish()
             {
@@ -143,12 +139,10 @@ public class ScienceQuestion extends AppCompatActivity
                     startActivity(intent);
                     finish();
                 });
-
                 dialog.show();
             }
         };
     }
-
     private void playAnimation(View view, int value, String data)
     {
         view.animate().alpha(value).scaleX(value).scaleY(value).setDuration(500).setStartDelay(100)
@@ -176,19 +170,16 @@ public class ScienceQuestion extends AppCompatActivity
                             {
                                 option = list.get(position).getOpt4();
                             }
-
                             playAnimation(binding.OptionContainer.getChildAt(count), 0, option);
                             count ++;
                         }
                     }
-
                     @SuppressLint("SetTextI18n")
                     @Override
                     public void onAnimationEnd(@NonNull Animator animation)
                     {
                         if(value == 0)
                         {
-
                             try
                             {
                                 ((TextView)view).setText(data);
@@ -198,18 +189,15 @@ public class ScienceQuestion extends AppCompatActivity
                             {
                                 ((Button)view).setText(data);
                             }
-
                             view.setTag(data);
                             playAnimation(view, 1, data);
                         }
                     }
-
                     @Override
                     public void onAnimationCancel(@NonNull Animator animation)
                     {
 
                     }
-
                     @Override
                     public void onAnimationRepeat(@NonNull Animator animation)
                     {
@@ -217,7 +205,6 @@ public class ScienceQuestion extends AppCompatActivity
                     }
                 });
     }
-
     private void enableOption()
     {
         for(int i = 0; i <4; i++)
@@ -227,14 +214,12 @@ public class ScienceQuestion extends AppCompatActivity
             binding.OptionContainer.getChildAt(i).setBackgroundResource(R.drawable.btn_option);
         }
     }
-
     private void checkAnswer(Button selectedOption)
     {
         if(timer != null)
         {
             timer.cancel();
         }
-
         binding.NextBtn.setEnabled(true);
         binding.NextBtn.setAlpha(1);
 
@@ -251,5 +236,4 @@ public class ScienceQuestion extends AppCompatActivity
             correctOption.setBackgroundResource(R.drawable.back_color_green);
         }
     }
-
 }

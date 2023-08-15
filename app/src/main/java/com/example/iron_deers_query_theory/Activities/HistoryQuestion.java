@@ -24,7 +24,6 @@ import java.util.ArrayList;
 
 public class HistoryQuestion extends AppCompatActivity
 {
-
     ArrayList<QuestionBuild> list = new ArrayList<>();
     HistoryQuestionBinding binding;
     private int count = 0;
@@ -32,10 +31,8 @@ public class HistoryQuestion extends AppCompatActivity
     private int score = 0;
 
     CountDownTimer timer;
-
     @SuppressLint("MissingInflatedId")
     @Override
-
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
@@ -75,7 +72,6 @@ public class HistoryQuestion extends AppCompatActivity
         list.add(new QuestionBuild("Q10: How many oceans are in the world?",
                 "8", "4", "7", "5", "5"));
 
-
         Button quit = findViewById(R.id.Quit_btn);
 
         quit.setOnClickListener(v ->
@@ -98,6 +94,7 @@ public class HistoryQuestion extends AppCompatActivity
             {
                 timer.cancel();
             }
+            assert timer != null;
             timer.start();
 
             binding.NextBtn.setEnabled(false);
@@ -114,13 +111,11 @@ public class HistoryQuestion extends AppCompatActivity
                 finish();
                 return;
             }
-
             count = 0;
 
             playAnimation(binding.Question, 0, list.get(position).getQuestion());
         });
     }
-
     private void resetTimer()
     {
         timer = new CountDownTimer(10000, 1000) {
@@ -129,7 +124,6 @@ public class HistoryQuestion extends AppCompatActivity
             {
                 binding.Time.setText(String.valueOf(millisUntilFinished/1000));
             }
-
             @Override
             public void onFinish()
             {
@@ -145,7 +139,6 @@ public class HistoryQuestion extends AppCompatActivity
                         finish();
                     }
                 });
-
                 dialog.show();
             }
         };
@@ -182,14 +175,12 @@ public class HistoryQuestion extends AppCompatActivity
                             count ++;
                         }
                     }
-
                     @SuppressLint("SetTextI18n")
                     @Override
                     public void onAnimationEnd(@NonNull Animator animation)
                     {
                         if(value == 0)
                         {
-
                             try
                             {
                                 ((TextView)view).setText(data);
@@ -199,18 +190,15 @@ public class HistoryQuestion extends AppCompatActivity
                             {
                                 ((Button)view).setText(data);
                             }
-
                             view.setTag(data);
                             playAnimation(view, 1, data);
                         }
                     }
-
                     @Override
                     public void onAnimationCancel(@NonNull Animator animation)
                     {
 
                     }
-
                     @Override
                     public void onAnimationRepeat(@NonNull Animator animation)
                     {
@@ -218,7 +206,6 @@ public class HistoryQuestion extends AppCompatActivity
                     }
                 });
     }
-
     private void enableOption()
     {
         for(int i = 0; i <4; i++)
@@ -228,7 +215,6 @@ public class HistoryQuestion extends AppCompatActivity
             binding.OptionContainer.getChildAt(i).setBackgroundResource(R.drawable.btn_option);
         }
     }
-
     private void checkAnswer(Button selectedOption)
     {
         if(timer != null)
@@ -252,5 +238,4 @@ public class HistoryQuestion extends AppCompatActivity
             correctOption.setBackgroundResource(R.drawable.back_color_green);
         }
     }
-
 }
