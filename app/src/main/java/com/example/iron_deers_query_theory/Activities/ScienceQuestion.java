@@ -80,7 +80,7 @@ public class ScienceQuestion extends AppCompatActivity
 
         quit.setOnClickListener(v ->
         {
-            Intent intent = new Intent(ScienceQuestion.this, CategoryUpdate.class);
+            Intent intent = new Intent(ScienceQuestion.this, CategoryFragment.class);
             startActivity(intent);
         });
 
