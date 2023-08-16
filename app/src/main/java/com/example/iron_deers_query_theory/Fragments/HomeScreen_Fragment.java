@@ -15,8 +15,8 @@ import com.example.iron_deers_query_theory.R;
  * Use the {@link HomeScreen_Fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class HomeScreen_Fragment extends Fragment {
-
+public class HomeScreen_Fragment extends Fragment
+{
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -26,7 +26,8 @@ public class HomeScreen_Fragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public HomeScreen_Fragment() {
+    public HomeScreen_Fragment()
+    {
         // Required empty public constructor
     }
 

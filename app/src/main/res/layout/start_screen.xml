@@ -15,7 +15,7 @@
         android:layout_width="350dp"
         android:layout_height="109dp"
         android:lineSpacingExtra="8sp"
-        android:text="Query Theory is a a quizzing app that rapidly asks you questions to keep up a rhythm while testing your memory."
+        android:text="@string/query_theory_is_a_a_quizzing_app_that_rapidly_asks_you_questions_to_keep_up_a_rhythm_while_testing_your_memory"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="16sp"
@@ -24,13 +24,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.172" />
+        app:layout_constraintVertical_bias="0.172"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="317dp"
         android:layout_height="69dp"
-        android:text="Query Theory"
+        android:text="@string/query_theory_blurb"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="48sp"
@@ -39,14 +40,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024" />
+        app:layout_constraintVertical_bias="0.024"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/start_Going"
         android:layout_width="193dp"
         android:layout_height="87dp"
         android:backgroundTint="#41e5ed"
-        android:text="Start Learning"
+        android:text="@string/start_learning"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -65,5 +67,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.587"
-        app:srcCompat="@drawable/query_logo" />
+        app:srcCompat="@drawable/query_logo"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/Todo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
