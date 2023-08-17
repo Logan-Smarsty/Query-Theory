@@ -240,8 +240,8 @@ public class ScienceQuestion extends AppCompatActivity
 
 
             //Code to Display the Current Score
-            TextView cat = (TextView)findViewById(R.id.scores);
-            cat.setText("      Score:" + score  + "/10");
+            TextView dog = (TextView)findViewById(R.id.scores);
+            dog.setText("      Score:" + score  + "/10");
 
 
 
