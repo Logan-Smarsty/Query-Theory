@@ -2,7 +2,7 @@ package com.example.iron_deers_query_theory.Classes;
 
 public class QuestionBuild
 {
-    private String question, opt1, opt2, opt3, opt4, correctAnswer;
+    public String question, opt1, opt2, opt3, opt4, correctAnswer;
     private int selectedOption = -1;
 
     public QuestionBuild(String question, String opt1, String opt2, String opt3, String opt4, String correctAnswer)
@@ -13,6 +13,7 @@ public class QuestionBuild
         this.opt3 = opt3;
         this.opt4 = opt4;
         this.correctAnswer = correctAnswer;
+
     }
 
     public QuestionBuild()
@@ -78,6 +79,7 @@ public class QuestionBuild
     public void setCorrectAnswer(String correctAnswer)
     {
         this.correctAnswer = correctAnswer;
+
 
     }
 }

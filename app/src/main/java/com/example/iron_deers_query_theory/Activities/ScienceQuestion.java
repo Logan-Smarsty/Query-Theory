@@ -31,6 +31,10 @@ public class ScienceQuestion extends AppCompatActivity
     private int position = 0;
     private int score = 0;
 
+    private String dog = score + "/10";
+
+    Button selectedOption;
+
     CountDownTimer timer;
 
     @Override
@@ -203,6 +207,11 @@ public class ScienceQuestion extends AppCompatActivity
                     {
 
                     }
+
+
+
+
+
                 });
     }
     private void enableOption()
@@ -225,8 +234,17 @@ public class ScienceQuestion extends AppCompatActivity
 
         if(selectedOption.getText().toString().equals(list.get(position).getCorrectAnswer()))
         {
-            score ++;
+          score++;
             selectedOption.setBackgroundResource(R.drawable.back_color_green);
+
+
+
+            //Code to Display the Current Score
+            TextView cat = (TextView)findViewById(R.id.scores);
+            cat.setText("      Score:" + score  + "/10");
+
+
+
         }
         else
         {
@@ -236,4 +254,17 @@ public class ScienceQuestion extends AppCompatActivity
             correctOption.setBackgroundResource(R.drawable.back_color_green);
         }
     }
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
