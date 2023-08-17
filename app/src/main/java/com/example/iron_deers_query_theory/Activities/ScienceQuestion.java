@@ -70,7 +70,7 @@ public class ScienceQuestion extends AppCompatActivity
 
         list.add(new QuestionBuild("Q9: What is the order of classifications?",
                 "Domain, Kingdom, Phylum, Family, Genus, and Species", "Kingdom, Phylum, Class, Order, Family, Genus, Species",
-                "Domain, Phylum, Class, Order, Family, Genus, Species", "Kingdom, Phylum, Order, Family, Class, Genus, Species",
+                "Domain, Phylum, Class, Order, Family, Genus, Species", "Domain, Phylum, Class, Order, Family, Genus, Species",
                 "Kingdom, Phylum, Class, Order, Family, Genus, Species"));
 
         list.add(new QuestionBuild("Q10: What do animal cells have that plant cells do not?",
