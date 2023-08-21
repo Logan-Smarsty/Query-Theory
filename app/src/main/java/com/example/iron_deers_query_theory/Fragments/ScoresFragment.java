@@ -31,7 +31,6 @@ public class ScoresFragment extends Fragment
     public ScoresFragment()
     {
         // Required empty public constructor
-
     }
 
     /**

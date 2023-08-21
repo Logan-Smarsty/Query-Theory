@@ -24,6 +24,5 @@ public class StartScreen extends AppCompatActivity
          Intent intent = new Intent(StartScreen.this, MainActivity.class);
          startActivity(intent);
         });
-
     }
 }

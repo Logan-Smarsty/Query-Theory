@@ -25,7 +25,6 @@ import com.example.iron_deers_query_theory.R;
  */
 public class CategoryFragment extends Fragment
 {
-
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -69,7 +68,6 @@ public class CategoryFragment extends Fragment
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
     }
 
     @Override
@@ -91,7 +89,6 @@ public class CategoryFragment extends Fragment
                Intent intent = new Intent(getActivity(), EnglishQuestion.class);
                startActivity(intent);
             }
-
         });
         Math.setOnClickListener(new View.OnClickListener()
         {
@@ -101,7 +98,6 @@ public class CategoryFragment extends Fragment
                 Intent intent = new Intent(getActivity(), MathQuestion.class);
                 startActivity(intent);
             }
-
         });
         Science.setOnClickListener(new View.OnClickListener()
         {
@@ -111,7 +107,6 @@ public class CategoryFragment extends Fragment
                 Intent intent = new Intent(getActivity(), ScienceQuestion.class);
                 startActivity(intent);
             }
-
         });
         History.setOnClickListener(new View.OnClickListener()
         {
@@ -122,7 +117,6 @@ public class CategoryFragment extends Fragment
                 startActivity(intent);
             }
         });
-
         return view;
     }
 }

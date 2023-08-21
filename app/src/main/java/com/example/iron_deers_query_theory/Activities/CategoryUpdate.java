@@ -48,8 +48,6 @@ public class CategoryUpdate extends AppCompatActivity
            }
            return true;
        });
-
-
     }
     private void replaceFragment(Fragment fragment)
     {
