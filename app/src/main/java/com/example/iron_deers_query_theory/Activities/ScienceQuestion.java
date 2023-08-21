@@ -207,11 +207,6 @@ public class ScienceQuestion extends AppCompatActivity
                     {
 
                     }
-
-
-
-
-
                 });
     }
     private void enableOption()
@@ -249,12 +244,3 @@ public class ScienceQuestion extends AppCompatActivity
         }
     }
 }
-
-
-
-
-
-
-
-
-

@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity
     GoogleSignInClient gsc;
     ImageView GoogleBtn;
 
-
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -37,7 +36,6 @@ public class MainActivity extends AppCompatActivity
         gsc = GoogleSignIn.getClient(this,gso);
 
         GoogleBtn.setOnClickListener(v -> signIn());
-
 
         TextView username = findViewById(R.id.username);
         TextView password = findViewById(R.id.password);
@@ -58,16 +56,12 @@ public class MainActivity extends AppCompatActivity
                 Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
     void signIn()
     {
-
         Intent signInIntent = gsc.getSignInIntent();
 
         Intent intent = new Intent(MainActivity.this, CategoryUpdate.class);
         startActivity(intent);
         startActivityForResult(signInIntent, 1000);
-
-
     }}

@@ -13,12 +13,10 @@ public class QuestionBuild
         this.opt3 = opt3;
         this.opt4 = opt4;
         this.correctAnswer = correctAnswer;
-
     }
 
     public QuestionBuild()
     {
-
     }
 
     public String getQuestion()
@@ -79,7 +77,5 @@ public class QuestionBuild
     public void setCorrectAnswer(String correctAnswer)
     {
         this.correctAnswer = correctAnswer;
-
-
     }
 }
