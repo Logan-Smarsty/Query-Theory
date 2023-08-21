@@ -11,7 +11,7 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         app:srcCompat="@drawable/_4"
-        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="37dp" />
 
     <ImageView
@@ -44,5 +44,13 @@
         android:layout_height="200dp"
         app:srcCompat="@drawable/_1"
         tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="453dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/giant_deer_logo"
+        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="453dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
