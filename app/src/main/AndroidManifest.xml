@@ -15,6 +15,9 @@
         android:theme="@style/Theme.IronDeersQueryTheory"
         tools:targetApi="31">
         <activity
+            android:name=".colorBlindCheck2"
+            android:exported="false" />
+        <activity
             android:name=".ColorBlindCheck"
             android:exported="false" />
         <activity
