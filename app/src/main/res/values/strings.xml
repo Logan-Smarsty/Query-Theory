@@ -2,7 +2,6 @@
     <string name="app_name">Query Theory</string>
     <string name="query_theory">Query Theory</string>
     <string name="button">Button</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="timeout_better_luck_next_time_dummy">TimeOut!</string>
     <string name="todo">TODO</string>
@@ -15,4 +14,13 @@
     <string name="categoryBurger">Category</string>
     <string name="scoresBurger">Scores</string>
     <string name="Burgersettings">Settings</string>
+    <string name="next">Next</string>
+    <string name="option4">Option 4</string>
+    <string name="option3">Option 3</string>
+    <string name="option2">Option 2</string>
+    <string name="option1">Option 1</string>
+    <string name="_30">30</string>
+    <string name="hyperbole">What is hyperbole?</string>
+    <string name="score_0_10">Score: 0/10</string>
+    <string name="quit">Quit</string>
 </resources>

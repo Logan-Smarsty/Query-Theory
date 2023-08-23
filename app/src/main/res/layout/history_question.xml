@@ -20,7 +20,8 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/Quit_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/Quit_btn" />
+        app:layout_constraintTop_toTopOf="@+id/Quit_btn"
+        tools:ignore="HardcodedText" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/OptionContainer"
@@ -52,7 +53,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Option3" />
+            app:layout_constraintTop_toBottomOf="@+id/Option3"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Option3"
@@ -70,7 +72,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Option2" />
+            app:layout_constraintTop_toBottomOf="@+id/Option2"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Option2"
@@ -88,7 +91,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Option1" />
+            app:layout_constraintTop_toBottomOf="@+id/Option1"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Option1"
@@ -105,7 +109,8 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
@@ -116,7 +121,9 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/stopwatch" />
+        app:srcCompat="@drawable/stopwatch"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
 
     <TextView
         android:id="@+id/Time"
@@ -127,7 +134,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/Timer"
         app:layout_constraintStart_toEndOf="@+id/Timer"
-        app:layout_constraintTop_toTopOf="@+id/Timer" />
+        app:layout_constraintTop_toTopOf="@+id/Timer"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/QuestionMark"
@@ -138,7 +146,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/question"
-        tools:ignore="ImageContrastCheck" />
+        tools:ignore="ImageContrastCheck"
+        android:importantForAccessibility="no" />
 
     <TextView
         android:id="@+id/Question_nums"
@@ -149,7 +158,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/QuestionMark"
         app:layout_constraintEnd_toStartOf="@+id/QuestionMark"
-        app:layout_constraintTop_toTopOf="@+id/QuestionMark" />
+        app:layout_constraintTop_toTopOf="@+id/QuestionMark"
+        tools:ignore="HardcodedText" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/QuestionContainer"
@@ -174,7 +184,8 @@
             android:text="What year did Christopher Columbus discover the Americas?"
             android:textColor="@color/white"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
     </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
@@ -186,10 +197,11 @@
         android:background="@drawable/button_quit"
         android:text="Quit"
         android:textAllCaps="false"
-        android:textColor="@color/white"
+        android:textColor="#0D47A1"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/OptionContainer" />
+        app:layout_constraintTop_toBottomOf="@+id/OptionContainer"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/scores"
@@ -207,5 +219,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.032"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints,TextViewEdits" />
 </androidx.constraintlayout.widget.ConstraintLayout>
