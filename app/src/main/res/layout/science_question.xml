@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:background="@drawable/btn_next"
-        android:text="Next"
+        android:text="@string/next"
         android:enabled="false"
         android:textAllCaps="false"
         android:textColor="@color/white"
@@ -44,7 +44,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/btn_option"
-            android:text="Option 4"
+            android:text="@string/option4"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -52,7 +52,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Option3" />
+            app:layout_constraintTop_toBottomOf="@+id/Option3"
+            tools:ignore="VisualLintButtonSize" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Option3"
@@ -62,7 +63,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/btn_option"
-            android:text="Option 3"
+            android:text="@string/option3"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -70,7 +71,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Option2" />
+            app:layout_constraintTop_toBottomOf="@+id/Option2"
+            tools:ignore="VisualLintButtonSize" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Option2"
@@ -80,7 +82,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/btn_option"
-            android:text="Option 2"
+            android:text="@string/option2"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -88,7 +90,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Option1" />
+            app:layout_constraintTop_toBottomOf="@+id/Option1"
+            tools:ignore="VisualLintButtonSize" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Option1"
@@ -98,14 +101,15 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/btn_option"
-            android:text="Option 1"
+            android:text="@string/option1"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="VisualLintButtonSize" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
@@ -116,13 +120,14 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/stopwatch" />
+        app:srcCompat="@drawable/stopwatch"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/Time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="30"
+        android:text="@string/_30"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/Timer"
@@ -138,13 +143,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/question"
-        tools:ignore="ImageContrastCheck" />
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/Question_nums"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1/10"
+        android:text="@string/s1_10"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/QuestionMark"
@@ -171,7 +177,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="What is the Periodic Symbol for Iron?"
+            android:text="@string/periodicSym"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -184,12 +190,13 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/button_quit"
-        android:text="Quit"
+        android:text="@string/quit"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/OptionContainer" />
+        app:layout_constraintTop_toBottomOf="@+id/OptionContainer"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/scores"
@@ -198,7 +205,7 @@
         android:ems="10"
         android:inputType="textCapCharacters"
         android:minHeight="48dp"
-        android:text="Score: 0/10"
+        android:text="@string/score_0_10"
         android:textAlignment="center"
         android:textColor="@android:color/holo_orange_light"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -206,5 +213,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.037"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,TextViewEdits" />
 </androidx.constraintlayout.widget.ConstraintLayout>
