@@ -23,4 +23,6 @@
     <string name="hyperbole">What is hyperbole?</string>
     <string name="score_0_10">Score: 0/10</string>
     <string name="quit">Quit</string>
+    <string name="s1_10">1/10</string>
+    <string name="Columbus">What year did Christopher Columbus discover the Americas?</string>
 </resources>
