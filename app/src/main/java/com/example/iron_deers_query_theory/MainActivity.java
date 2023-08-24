@@ -93,32 +93,6 @@ public class MainActivity extends AppCompatActivity
             else{
                 FirebaseDatabase.getInstance().getReference().child("Password").push().child("Pass:").setValue(txt_user);
             }
-
-            //Attempt to save user data
-
-                   /*String getName = name.getText().toString();
-                String getPass = pass.getText().toString();
-
-                HashMap<String, Object> hashMap = new HashMap<>();
-                hashMap.put("name" , username);
-                hashMap.put("password" , password);
-
-                FirebaseFirestore.getInstance().collection("User")
-                        .document("UserData")
-                        .set(hashMap);
-                   .addOnSuccessListener(new OnSuccessListener<Void>() {
-                        @Override
-                        public void onSuccess(Void unused) {
-                            Toast.makeText(MainActivity.this, "Data Saved Successfully", Toast.LENGTH_SHORT).show();
-                        }
-                    })
-                    .addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            Toast.makeText(MainActivity.this, "Failed", Toast.LENGTH_SHORT).show();
-                        }
-                    });*/
-
         });
 
 
