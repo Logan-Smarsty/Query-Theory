@@ -219,7 +219,6 @@ public class ScienceQuestion extends AppCompatActivity
         else
         {
             selectedOption.setBackgroundResource(R.drawable.back_color_red);
-
             Button correctOption = binding.OptionContainer.findViewWithTag(list.get(position).getCorrectAnswer());
             correctOption.setBackgroundResource(R.drawable.back_color_green);
         }
