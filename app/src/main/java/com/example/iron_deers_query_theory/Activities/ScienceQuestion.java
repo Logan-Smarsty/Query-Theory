@@ -229,7 +229,7 @@ public class ScienceQuestion extends AppCompatActivity
           score++;
             selectedOption.setBackgroundResource(R.drawable.back_color_green);
             //Code to Display the Current Score
-            TextView dog = (TextView)findViewById(R.id.scores);
+            TextView dog = findViewById(R.id.scores);
             dog.setText("Score:" + score  + "/10");
         }
         else
