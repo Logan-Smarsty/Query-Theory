@@ -227,7 +227,7 @@ public class MathQuestion extends AppCompatActivity
             score ++;
             selectedOption.setBackgroundResource(R.drawable.back_color_green);
             //Code to Display the Current Score
-            TextView cat = (TextView)findViewById(R.id.scores);
+            TextView cat = findViewById(R.id.scores);
             cat.setText("Score:" + score  + "/10");
         }
         else
