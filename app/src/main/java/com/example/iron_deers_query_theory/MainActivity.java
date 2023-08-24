@@ -1,49 +1,31 @@
 package com.example.iron_deers_query_theory;
 
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.iron_deers_query_theory.Activities.CategoryUpdate;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
-
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.button.MaterialButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import org.w3c.dom.Text;
-
 import java.util.HashMap;
 import java.util.Map;
-
 public class MainActivity extends AppCompatActivity
 {
-
     GoogleSignInOptions gso;
     GoogleSignInClient gsc;
     ImageView GoogleBtn;
-
-    private EditText user;
-
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -55,86 +37,50 @@ public class MainActivity extends AppCompatActivity
 
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         gsc = GoogleSignIn.getClient(this,gso);
-
-
         GoogleBtn.setOnClickListener(v -> signIn());
-
 
         TextView username = findViewById(R.id.username);
         TextView password = findViewById(R.id.password);
 
-
-        MaterialButton LoginIn = (MaterialButton) findViewById(R.id.LogIn);
-
+        MaterialButton LoginIn = findViewById(R.id.LogIn);
         //admin account info
-
-        LoginIn.setOnClickListener(v -> {
-
-            if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
+        LoginIn.setOnClickListener(v ->
+        {
+            if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin"))
+            {
                 Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, CategoryUpdate.class);
                 startActivity(intent);
-            } else {
-                Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
-            }
+            } else {Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();}
+
             String txt_user = username.getText().toString();
-            if(txt_user.isEmpty()){
-                Toast.makeText(MainActivity.this, "Nothing Entered!", Toast.LENGTH_SHORT).show();
-            }
-            else{
-                FirebaseDatabase.getInstance().getReference().child("Username").push().child("User:").setValue(txt_user);
-            }
+            if(txt_user.isEmpty()){Toast.makeText(MainActivity.this, "Nothing Entered!", Toast.LENGTH_SHORT).show();}
+            else{FirebaseDatabase.getInstance().getReference().child("Username").push().child("User:").setValue(txt_user);}
 
             String txt_pass = password.getText().toString();
-            if(txt_pass.isEmpty()){
-                Toast.makeText(MainActivity.this, "Nothing Entered!", Toast.LENGTH_SHORT).show();
-            }
-            else{
-                FirebaseDatabase.getInstance().getReference().child("Password").push().child("Pass:").setValue(txt_user);
-            }
+            if(txt_pass.isEmpty()){Toast.makeText(MainActivity.this, "Nothing Entered!", Toast.LENGTH_SHORT).show();}
+            else{FirebaseDatabase.getInstance().getReference().child("Password").push().child("Pass:").setValue(txt_user);}
         });
-
-
-
-
-
-        };
-
-
-
+        }
     void signIn()
     {
-
         Intent signInIntent = gsc.getSignInIntent();
-
         Intent intent = new Intent(MainActivity.this, CategoryUpdate.class);
         startActivity(intent);
         startActivityForResult(signInIntent, 1000);
-
-
     }
-
-
-
-
     //Adding questions to Firebase
     @Override
-    protected void onStart() {
+    protected void onStart()
+    {
         super.onStart();
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
-        if (user != null) {
-            startActivity(new Intent(MainActivity.this, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK));
-        }
-
-
+        if (user != null) {startActivity(new Intent(MainActivity.this, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK));}
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
         Map<String, Object> city = new HashMap<>();
-
-
-
 
         //public firebase()
         city.put("Q1", "What is a hyperbole?");
@@ -206,20 +152,10 @@ public class MainActivity extends AppCompatActivity
         city.put("Q10 option 2" , "The Raven King");
         city.put("Q10 option 3" , "The Raven");
         city.put("Q10 option 4" , "The Raven Hair");
-        db.collection("Quizzes").document("English").set(city).addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                if (task.isSuccessful()) {
-
-                    Toast.makeText(MainActivity.this, "Values added!", Toast.LENGTH_SHORT).show();
-
-                } else {
-                    Toast.makeText(MainActivity.this, "Values failed to add.", Toast.LENGTH_SHORT).show();
-
-                }
-            }
+        db.collection("Quizzes").document("English").set(city).addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {Toast.makeText(MainActivity.this, "Values added!", Toast.LENGTH_SHORT).show();}
+            else {Toast.makeText(MainActivity.this, "Values failed to add.", Toast.LENGTH_SHORT).show();}
         });
-
         city.put("Q1", "What year did Christopher Columbus discover the Americas?");
         city.put("Q1 Answer", "1492");
         city.put("Q1 option 1 " , "1429");
@@ -289,21 +225,10 @@ public class MainActivity extends AppCompatActivity
         city.put("Q10 option 2" , "4");
         city.put("Q10 option 3" , "7");
         city.put("Q10 option 4" , "5");
-
-        db.collection("Quizzes").document("History").set(city).addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                if (task.isSuccessful()) {
-
-                    Toast.makeText(MainActivity.this, "Values added!", Toast.LENGTH_SHORT).show();
-
-                } else {
-                    Toast.makeText(MainActivity.this, "Values failed to add.", Toast.LENGTH_SHORT).show();
-
-                }
-            }
+        db.collection("Quizzes").document("History").set(city).addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {Toast.makeText(MainActivity.this, "Values added!", Toast.LENGTH_SHORT).show();}
+            else {Toast.makeText(MainActivity.this, "Values failed to add.", Toast.LENGTH_SHORT).show();}
         });
-
         city.put("Q1", "What is the square root of 25?");
         city.put("Q1 Answer", "5");
         city.put("Q1 option 1 " , "5");
@@ -373,21 +298,10 @@ public class MainActivity extends AppCompatActivity
         city.put("Q10 option 2" , "1/2 , -1");
         city.put("Q10 option 3" , "-1/2 , -1");
         city.put("Q10 option 4" , "-1/2 , 1");
-
-        db.collection("Quizzes").document("Math").set(city).addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                if (task.isSuccessful()) {
-
-                    Toast.makeText(MainActivity.this, "Values added!", Toast.LENGTH_SHORT).show();
-
-                } else {
-                    Toast.makeText(MainActivity.this, "Values failed to add.", Toast.LENGTH_SHORT).show();
-
-                }
-            }
+        db.collection("Quizzes").document("Math").set(city).addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {Toast.makeText(MainActivity.this, "Values added!", Toast.LENGTH_SHORT).show();}
+            else {Toast.makeText(MainActivity.this, "Values failed to add.", Toast.LENGTH_SHORT).show();}
         });
-
         city.put("Q1", "What is the Periodic Symbol for Iron");
         city.put("Q1 Answer", "Fe");
         city.put("Q1 option 1 " , "In");
@@ -457,21 +371,8 @@ public class MainActivity extends AppCompatActivity
         city.put("Q10 option 2" , "Chloroplasts");
         city.put("Q10 option 3" , "Vacuole");
         city.put("Q10 option 4" , "Lysosomes");
-        db.collection("Quizzes").document("Science").set(city).addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                if (task.isSuccessful()) {
-
-                    Toast.makeText(MainActivity.this, "Values added!", Toast.LENGTH_SHORT).show();
-
-                } else {
-                    Toast.makeText(MainActivity.this, "Values failed to add.", Toast.LENGTH_SHORT).show();
-
-                }
-            }
+        db.collection("Quizzes").document("Science").set(city).addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {Toast.makeText(MainActivity.this, "Values added!", Toast.LENGTH_SHORT).show();}
+            else {Toast.makeText(MainActivity.this, "Values failed to add.", Toast.LENGTH_SHORT).show();}
         });
-
-
-
-
     }}

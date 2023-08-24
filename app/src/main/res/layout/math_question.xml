@@ -127,7 +127,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="VisualLintButtonSize" />
+            tools:ignore="VisualLintButtonSize,TextContrastCheck,SpeakableTextPresentCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
