@@ -124,7 +124,8 @@ public class MathQuestion extends AppCompatActivity
                 dialog.getWindow().addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
                 dialog.setCancelable(false);
                 dialog.setContentView(R.layout.out_of_time_screen);
-                dialog.findViewById(R.id.Try_again_btn).setOnClickListener(v -> {
+                dialog.findViewById(R.id.Try_again_btn).setOnClickListener(v ->
+                {
                     Intent intent = new Intent(MathQuestion.this, CategoryFragment.class);
                     startActivity(intent);
                     finish();
@@ -136,7 +137,8 @@ public class MathQuestion extends AppCompatActivity
     private void playAnimation(View view, int value, String data)
     {
         view.animate().alpha(value).scaleX(value).scaleY(value).setDuration(500).setStartDelay(100)
-                .setInterpolator(new DecelerateInterpolator()).setListener(new Animator.AnimatorListener() {
+                .setInterpolator(new DecelerateInterpolator()).setListener(new Animator.AnimatorListener()
+                {
                     @Override
                     public void onAnimationStart(@NonNull Animator animation)
                     {
@@ -216,7 +218,6 @@ public class MathQuestion extends AppCompatActivity
         else
         {
             selectedOption.setBackgroundResource(R.drawable.back_color_red);
-
             Button correctOption = binding.OptionContainer.findViewWithTag(list.get(position).getCorrectAnswer());
             correctOption.setBackgroundResource(R.drawable.back_color_green);
         }
