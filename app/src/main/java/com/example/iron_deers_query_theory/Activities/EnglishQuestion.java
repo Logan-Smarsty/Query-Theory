@@ -118,7 +118,7 @@ public class EnglishQuestion extends AppCompatActivity
     }
     private void resetTimer()
     {
-        timer = new CountDownTimer(10000, 1000) {
+        timer = new CountDownTimer(30000, 3000) {
             @Override
             public void onTick(long millisUntilFinished)
             {
@@ -226,7 +226,7 @@ public class EnglishQuestion extends AppCompatActivity
             score ++;
             selectedOption.setBackgroundResource(R.drawable.back_color_green);
             //Code to Display the Current Score
-            TextView cat = (TextView)findViewById(R.id.scores);
+            TextView cat = findViewById(R.id.scores);
             cat.setText("Score:" + score  + "/10");
         }
         else
