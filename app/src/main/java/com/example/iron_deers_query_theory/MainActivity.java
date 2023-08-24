@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
         startActivityForResult(signInIntent, 1000);
     }
+
     //Adding questions to Firebase
     @Override
     protected void onStart()

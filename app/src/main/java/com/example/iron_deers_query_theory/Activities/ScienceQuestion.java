@@ -19,6 +19,7 @@ import com.example.iron_deers_query_theory.Fragments.CategoryFragment;
 import com.example.iron_deers_query_theory.Fragments.ScoresFragment;
 import com.example.iron_deers_query_theory.R;
 import com.example.iron_deers_query_theory.databinding.ScienceQuestionBinding;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 public class ScienceQuestion extends AppCompatActivity
@@ -223,5 +224,6 @@ public class ScienceQuestion extends AppCompatActivity
             Button correctOption = binding.OptionContainer.findViewWithTag(list.get(position).getCorrectAnswer());
             correctOption.setBackgroundResource(R.drawable.back_color_green);
         }
+        FirebaseDatabase.getInstance().getReference().child("Science").push().child("Score").setValue(score);
     }
 }

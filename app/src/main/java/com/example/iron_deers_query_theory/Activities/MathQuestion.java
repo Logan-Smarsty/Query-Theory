@@ -19,6 +19,7 @@ import com.example.iron_deers_query_theory.Fragments.ScoresFragment;
 import com.example.iron_deers_query_theory.Classes.QuestionBuild;
 import com.example.iron_deers_query_theory.R;
 import com.example.iron_deers_query_theory.databinding.MathQuestionBinding;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
@@ -59,7 +60,7 @@ public class MathQuestion extends AppCompatActivity
         list.add(new QuestionBuild(" Q6: What is the Order of Operations?", "SADMEP", "PEDMSA", "PEMDAS", "DASPEM", "PEMDAS"));
 
         list.add(new QuestionBuild("Q7: What is the derivative of 4x^3 + 12x^2 - 6x + 7?",
-                "12x^2 + 24x + 7", "4x^3 + 12x^2 - 6x", "12x^2 + 24x - 6", "4x^2 + 12x - 6", "4x^2 + 12x - 6"));
+                "12x^2 + 24x + 7", "4x^3 + 12x^2 - 6x", "12x^2 + 24x - 6", "4x^2 + 12x - 6", "12x^2 + 24x - 6"));
 
         list.add(new QuestionBuild("Q8: Which one of the following is an irrational number?",
                 "√-1", "√10", "-3.4", "⅞", "√10"));
@@ -67,7 +68,7 @@ public class MathQuestion extends AppCompatActivity
         list.add(new QuestionBuild("Q9: What is sin(x)/cos(x)?",
                 "cot(x)", "tan(x)", "sec(x)", "1", "tan(x)"));
 
-        list.add(new QuestionBuild("Q10: What is x equal to for 4x^2 - 6x + 2?",
+        list.add(new QuestionBuild("Q10: What is x equal to for 0 = 4x^2 - 6x + 2?",
                 "½, 1", "½, -1", "-½, -1", "-½, 1", "-½, -1"));
 
         Button quit = findViewById(R.id.Quit_btn);
@@ -219,5 +220,6 @@ public class MathQuestion extends AppCompatActivity
             Button correctOption = binding.OptionContainer.findViewWithTag(list.get(position).getCorrectAnswer());
             correctOption.setBackgroundResource(R.drawable.back_color_green);
         }
+        FirebaseDatabase.getInstance().getReference().child("Math").push().child("Score").setValue(score);
     }
 }
