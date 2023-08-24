@@ -21,7 +21,6 @@ import com.example.iron_deers_query_theory.R;
 import com.example.iron_deers_query_theory.databinding.HistoryQuestionBinding;
 
 import java.util.ArrayList;
-
 public class HistoryQuestion extends AppCompatActivity
 {
     ArrayList<QuestionBuild> list = new ArrayList<>();
@@ -80,20 +79,11 @@ public class HistoryQuestion extends AppCompatActivity
             startActivity(intent);
         });
 
-        for(int i = 0; i < 4; i ++)
-        {
-            binding.OptionContainer.getChildAt(i).setOnClickListener(v -> checkAnswer((Button) v));
-        }
-
+        for(int i = 0; i < 4; i ++) {binding.OptionContainer.getChildAt(i).setOnClickListener(v -> checkAnswer((Button) v));}
         playAnimation(binding.Question, 0,list.get(position).getQuestion());
-
         binding.NextBtn.setOnClickListener(v ->
         {
-
-            if(timer != null)
-            {
-                timer.cancel();
-            }
+            if(timer != null) {timer.cancel();}
             assert timer != null;
             timer.start();
 
@@ -120,10 +110,7 @@ public class HistoryQuestion extends AppCompatActivity
     {
         timer = new CountDownTimer(30000, 3000) {
             @Override
-            public void onTick(long millisUntilFinished)
-            {
-                binding.Time.setText(String.valueOf(millisUntilFinished/1000));
-            }
+            public void onTick(long millisUntilFinished) {binding.Time.setText(String.valueOf(millisUntilFinished/1000));}
             @Override
             public void onFinish()
             {
@@ -143,12 +130,13 @@ public class HistoryQuestion extends AppCompatActivity
     private void playAnimation(View view, int value, String data)
     {
         view.animate().alpha(value).scaleX(value).scaleY(value).setDuration(500).setStartDelay(100)
-                .setInterpolator(new DecelerateInterpolator()).setListener(new Animator.AnimatorListener() {
+                .setInterpolator(new DecelerateInterpolator()).setListener(new Animator.AnimatorListener()
+                {
                     @Override
                     public void onAnimationStart(@NonNull Animator animation)
                     {
-                        if(value == 0 && count <4){
-
+                        if(value == 0 && count <4)
+                        {
                             String option = "";
 
                             if(count == 0)
@@ -167,7 +155,6 @@ public class HistoryQuestion extends AppCompatActivity
                             {
                                 option = list.get(position).getOpt4();
                             }
-
                             playAnimation(binding.OptionContainer.getChildAt(count), 0, option);
                             count ++;
                         }
@@ -192,15 +179,9 @@ public class HistoryQuestion extends AppCompatActivity
                         }
                     }
                     @Override
-                    public void onAnimationCancel(@NonNull Animator animation)
-                    {
-
-                    }
+                    public void onAnimationCancel(@NonNull Animator animation) {}
                     @Override
-                    public void onAnimationRepeat(@NonNull Animator animation)
-                    {
-
-                    }
+                    public void onAnimationRepeat(@NonNull Animator animation) {}
                 });
     }
     private void enableOption()
@@ -208,18 +189,13 @@ public class HistoryQuestion extends AppCompatActivity
         for(int i = 0; i <4; i++)
         {
             binding.OptionContainer.getChildAt(i).setEnabled(true);
-
             binding.OptionContainer.getChildAt(i).setBackgroundResource(R.drawable.btn_option);
         }
     }
     @SuppressLint("SetTextI18n")
     private void checkAnswer(Button selectedOption)
     {
-        if(timer != null)
-        {
-            timer.cancel();
-        }
-
+        if(timer != null) {timer.cancel();}
         binding.NextBtn.setEnabled(true);
         binding.NextBtn.setAlpha(1);
 
@@ -234,7 +210,6 @@ public class HistoryQuestion extends AppCompatActivity
         else
         {
             selectedOption.setBackgroundResource(R.drawable.back_color_red);
-
             Button correctOption = binding.OptionContainer.findViewWithTag(list.get(position).getCorrectAnswer());
             correctOption.setBackgroundResource(R.drawable.back_color_green);
         }

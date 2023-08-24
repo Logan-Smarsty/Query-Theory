@@ -2,7 +2,6 @@ package com.example.iron_deers_query_theory.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.animation.Animator;
 import android.annotation.SuppressLint;
 import android.app.Dialog;
@@ -22,7 +21,6 @@ import com.example.iron_deers_query_theory.R;
 import com.example.iron_deers_query_theory.databinding.ScienceQuestionBinding;
 
 import java.util.ArrayList;
-
 public class ScienceQuestion extends AppCompatActivity
 {
     ArrayList<QuestionBuild> list = new ArrayList<>();
@@ -32,9 +30,7 @@ public class ScienceQuestion extends AppCompatActivity
     private int score = 0;
 
     CountDownTimer timer;
-
     @Override
-
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
@@ -87,7 +83,6 @@ public class ScienceQuestion extends AppCompatActivity
         {
             binding.OptionContainer.getChildAt(i).setOnClickListener(v -> checkAnswer((Button) v));
         }
-
         playAnimation(binding.Question, 0,list.get(position).getQuestion());
 
         binding.NextBtn.setOnClickListener(v ->
@@ -114,18 +109,15 @@ public class ScienceQuestion extends AppCompatActivity
                 return;
             }
             count = 0;
-
             playAnimation(binding.Question, 0, list.get(position).getQuestion());
         });
     }
     private void resetTimer()
     {
-        timer = new CountDownTimer(10000, 1000) {
+        timer = new CountDownTimer(30000, 3000)
+        {
             @Override
-            public void onTick(long millisUntilFinished)
-            {
-                binding.Time.setText(String.valueOf(millisUntilFinished/1000));
-            }
+            public void onTick(long millisUntilFinished) {binding.Time.setText(String.valueOf(millisUntilFinished/1000));}
             @Override
             public void onFinish()
             {
@@ -146,12 +138,13 @@ public class ScienceQuestion extends AppCompatActivity
     private void playAnimation(View view, int value, String data)
     {
         view.animate().alpha(value).scaleX(value).scaleY(value).setDuration(500).setStartDelay(100)
-                .setInterpolator(new DecelerateInterpolator()).setListener(new Animator.AnimatorListener() {
+                .setInterpolator(new DecelerateInterpolator()).setListener(new Animator.AnimatorListener()
+                {
                     @Override
                     public void onAnimationStart(@NonNull Animator animation)
                     {
-                        if(value == 0 && count <4){
-
+                        if(value == 0 && count <4)
+                        {
                             String option = "";
 
                             if(count == 0)
@@ -194,15 +187,9 @@ public class ScienceQuestion extends AppCompatActivity
                         }
                     }
                     @Override
-                    public void onAnimationCancel(@NonNull Animator animation)
-                    {
-
-                    }
+                    public void onAnimationCancel(@NonNull Animator animation) {}
                     @Override
-                    public void onAnimationRepeat(@NonNull Animator animation)
-                    {
-
-                    }
+                    public void onAnimationRepeat(@NonNull Animator animation) {}
                 });
     }
     private void enableOption()
@@ -217,10 +204,7 @@ public class ScienceQuestion extends AppCompatActivity
     @SuppressLint("SetTextI18n")
     private void checkAnswer(Button selectedOption)
     {
-        if(timer != null)
-        {
-            timer.cancel();
-        }
+        if(timer != null) {timer.cancel();}
         binding.NextBtn.setEnabled(true);
         binding.NextBtn.setAlpha(1);
 
