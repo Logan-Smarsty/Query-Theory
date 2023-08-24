@@ -211,6 +211,7 @@ public class EnglishQuestion extends AppCompatActivity
             binding.OptionContainer.getChildAt(i).setBackgroundResource(R.drawable.btn_option);
         }
     }
+    @SuppressLint("SetTextI18n")
     private void checkAnswer(Button selectedOption)
     {
         if(timer != null)

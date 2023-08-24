@@ -31,10 +31,6 @@ public class ScienceQuestion extends AppCompatActivity
     private int position = 0;
     private int score = 0;
 
-    private String dog = score + "/10";
-
-    Button selectedOption;
-
     CountDownTimer timer;
 
     @Override
@@ -218,6 +214,7 @@ public class ScienceQuestion extends AppCompatActivity
             binding.OptionContainer.getChildAt(i).setBackgroundResource(R.drawable.btn_option);
         }
     }
+    @SuppressLint("SetTextI18n")
     private void checkAnswer(Button selectedOption)
     {
         if(timer != null)
