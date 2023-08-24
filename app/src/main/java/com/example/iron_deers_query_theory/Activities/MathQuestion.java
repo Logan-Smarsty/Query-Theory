@@ -82,15 +82,11 @@ public class MathQuestion extends AppCompatActivity
         {
             binding.OptionContainer.getChildAt(i).setOnClickListener(v -> checkAnswer((Button) v));
         }
-
         playAnimation(binding.Question, 0,list.get(position).getQuestion());
 
         binding.NextBtn.setOnClickListener(v ->
         {
-            if(timer != null)
-            {
-                timer.cancel();
-            }
+            if(timer != null) {timer.cancel();}
             assert timer != null;
             timer.start();
 
@@ -109,16 +105,12 @@ public class MathQuestion extends AppCompatActivity
                 return;
             }
             count = 0;
-
             playAnimation(binding.Question, 0, list.get(position).getQuestion());
         });
-
-
-
     }
     private void resetTimer()
     {
-        timer = new CountDownTimer(10000, 1000) {
+        timer = new CountDownTimer(30000, 3000) {
             @Override
             public void onTick(long millisUntilFinished)
             {
@@ -147,8 +139,8 @@ public class MathQuestion extends AppCompatActivity
                     @Override
                     public void onAnimationStart(@NonNull Animator animation)
                     {
-                        if(value == 0 && count <4){
-
+                        if(value == 0 && count <4)
+                        {
                             String option = "";
 
                             if(count == 0)
@@ -192,15 +184,9 @@ public class MathQuestion extends AppCompatActivity
                         }
                     }
                     @Override
-                    public void onAnimationCancel(@NonNull Animator animation)
-                    {
-
-                    }
+                    public void onAnimationCancel(@NonNull Animator animation) { }
                     @Override
-                    public void onAnimationRepeat(@NonNull Animator animation)
-                    {
-
-                    }
+                    public void onAnimationRepeat(@NonNull Animator animation) { }
                 });
     }
     private void enableOption()
@@ -208,17 +194,13 @@ public class MathQuestion extends AppCompatActivity
         for(int i = 0; i <4; i++)
         {
             binding.OptionContainer.getChildAt(i).setEnabled(true);
-
             binding.OptionContainer.getChildAt(i).setBackgroundResource(R.drawable.btn_option);
         }
     }
     @SuppressLint("SetTextI18n")
     private void checkAnswer(Button selectedOption)
     {
-        if(timer != null)
-        {
-            timer.cancel();
-        }
+        if(timer != null) {timer.cancel();}
         binding.NextBtn.setEnabled(true);
         binding.NextBtn.setAlpha(1);
 

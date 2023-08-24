@@ -1,7 +1,6 @@
 package com.example.iron_deers_query_theory.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
