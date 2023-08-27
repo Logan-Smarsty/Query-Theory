@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/homeBurger"
+        android:icon="@drawable/home_icon"
+        android:id="@+id/home"/>
+
+    <item android:title="@string/categoryBurger"
+        android:icon="@drawable/category_icon"
+        android:id="@+id/category"/>
+
+    <item android:title="@string/scoresBurger"
+        android:icon="@drawable/person_icon"
+        android:id="@+id/scores"/>
+
+    <item android:title="@string/Burgersettings"
+        android:icon="@drawable/settings_icon"
+        android:id="@+id/settings"/>
+</menu>
